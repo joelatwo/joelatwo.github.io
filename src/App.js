@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 import "./css/body.css"
-import Header from "./container/header.jsx"
-import Main from "./container/main_content.jsx"
-import Sidenav from './container/sidenav';
+// import Header from "./header/header"
+import Main from "./main_content/main_content"
+import Sidebar from './sidebar/sidebar';
 
 class App extends Component {
   render() {
     return (
      <div>
-      <Header />
-      <Sidenav />
-      <Main />
+      {/* <Header /> */}
+      <Sidebar />
+      {/* <Main /> */}
      </div>
     );
   }

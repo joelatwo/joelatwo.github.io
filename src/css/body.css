@@ -2,13 +2,24 @@ body{
     background-color: #151515;
     color: lightblue;
     font-family: 'Courier New', Courier, monospace;
-    --headerHeight: 50px;
-    --sidebarWidth: 200px;
+    /* --headerHeight: 50px;
+    --sidebarWidth: 200px; */
+}
+/* h1{
+  font-size: 3.75em;
+}
+h2{
+  font-si
 }
 
 a{
   color: lightblue;
   font-weight: bold;
+}
+
+button{
+  width: 50px;
+  height: 50px;
 }
 
 #header {
@@ -39,7 +50,7 @@ a{
     top: var(--headerHeight);
     width: calc(100% - var(--sidebarWidth));
     height: calc(100% - var(--headerHeight));
-  }
+  } */
 
 /* #frontPage {
     background-color: #151515;

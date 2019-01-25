@@ -1,0 +1,10 @@
+img{
+    max-width: 100%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 320px;
+}

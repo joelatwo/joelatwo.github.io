@@ -5,7 +5,7 @@ class Main extends Component {
     return (
      <div>
       <div id="infoBody">
-         <div class="section">
+         <div className="section">
             <h1>About Me</h1>
             <p>
                The thing I love most about Software Development is the infinity of it all. Literally we can build
@@ -14,16 +14,16 @@ class Main extends Component {
                favorite problems.
             </p>
          </div>
-         <div class="section">
+         <div className="section">
             <h1>Education</h1>
             <p>
                I am currently a student at the University of Idaho studying Computer
                Science. I will graduate in Fall 2019 with a BS in Computer Science.
             </p>
          </div>
-         <div class="section">
+         <div className="section">
             <h1>Projects</h1>
-            <div class="projectGrid">
+            <div className="projectGrid">
                <div>
                   <p>
                      <a href="./assets/English 317 Project 4 Whitepages.docx" download><strong> English 317 Google
@@ -104,7 +104,7 @@ class Main extends Component {
                </div>
             </div>
          </div>
-         <div class="section">
+         <div className="section">
             <h1>Job Experiences</h1>
             <strong>Currently Fenway Group</strong>
             <ul>
@@ -153,7 +153,7 @@ class Main extends Component {
                </li>
             </ul>
          </div>
-         <div class="section">
+         <div className="section">
             <h1>Technical Skills</h1>
             <h4>Working Knowledge</h4>
             <ul>
@@ -173,7 +173,7 @@ class Main extends Component {
                <li>Java</li>
             </ul>
          </div>
-         <div class="section">
+         <div className="section">
             <h1>
                Accomplishments
             </h1>
