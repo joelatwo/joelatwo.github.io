@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import image from "../assets/me.jpg"
+import image from "../../assets/me.jpg"
+import _ from "lodash"
 
 import "./sidebar.css"
-import Hamburger_Menu from "../Components/hamburger_menu"
+import Hamburger_Menu from "../../Components/hamburger_menu"
 
 class Sidebar extends Component {
   constructor(props)
@@ -10,6 +11,7 @@ class Sidebar extends Component {
       super(props)
       this.state = {
           isOpen: false,
+
           openIndex: null
       }
       this.HamburgerHandler = this.HamburgerHandler.bind(this);
@@ -28,18 +30,14 @@ class Sidebar extends Component {
                       <h1>
           {/* <img src={image} alt="Joel Atwood" /> */}
         </h1>
-        <h1>Home</h1>
-        <h1>Projects</h1>
-        <h1>Work Experience</h1>
-        <h1>Education</h1>
-        <h1>Technical Skills</h1>
-        <h1>Accomplishments</h1>
-        <h1>Hobbies</h1>
-        <h1>Social Media</h1>
+        {_.map(this.props.contentList, function(menu_item){return(
+
+            <h1 key={menu_item}>{menu_item}</h1>
+        )
+        })}
                     </div>
                     ): (<div />)
                     }
-        {/* <div>Ideas <br />Goals</div> */}
     </div>
     );
   }

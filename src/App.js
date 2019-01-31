@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 
-import "./css/body.css"
-// import Header from "./header/header"
-import Main from "./main_content/main_content"
-import Sidebar from './sidebar/sidebar';
+import "./body.css"
+
+import Navigation from "./navigation/navigation"
 
 class App extends Component {
   render() {
     return (
      <div>
-      {/* <Header /> */}
-      <Sidebar />
-      {/* <Main /> */}
+<Navigation></Navigation>
      </div>
     );
   }
