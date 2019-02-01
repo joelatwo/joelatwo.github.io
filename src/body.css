@@ -1,121 +1,28 @@
-body{
-    background-color: #151515;
-    color: lightblue;
-    font-family: 'Courier New', Courier, monospace;
-    /* --headerHeight: 50px;
+body {
+  background-color: #151515;
+  color: lightblue;
+  font-family: "Courier New", Courier, monospace;
+  width: 100vw;
+  height: 100vh;
+
+  /* --headerHeight: 50px;
     --sidebarWidth: 200px; */
 }
-/* h1{
-  font-size: 3.75em;
-}
-h2{
-  font-si
-}
 
-a{
+button {
   color: lightblue;
-  font-weight: bold;
+}
+.text_only_button {
+  padding: 0 0;
+  border: none;
+  background-color: inherit;
 }
 
-button{
-  width: 50px;
-  height: 50px;
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    display: grid;
-    text-align: center;
-    font-size: 24px;  
-    height: var(--headerHeight);
-    z-index: 10;
-    width: 100%;
-  }
-
-  #sidenav{
-    background-color: black;
-    position: fixed;
-    left: 0;
-    top: var(--headerHeight);
-    height: calc(100% - var(--headerHeight));
-    width: var(--sidebarWidth);
-    z-index: 9;
-  }
-
-  #infoBody{
-    position: relative;
-    left: var(--sidebarWidth);
-    top: var(--headerHeight);
-    width: calc(100% - var(--sidebarWidth));
-    height: calc(100% - var(--headerHeight));
-  } */
-
-/* #frontPage {
-    background-color: #151515;
-    color: #33ff00;
-  }
-  
-  a {
-    color: #33ff00;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0;
-  
-    background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    font-size: 44px;
-    border-bottom: 2px solid #33ff00;
-    padding-bottom: 30px;
-    padding-top: 10px;
-    margin-left: -8px;
-    padding-left: 10px;
-    height: 50px;
-    z-index: 1;
-    width: 101vw;
-  }
-  
-  .section {
-    border-bottom: 1px dashed #33ff00;
-  }
-  
-  .projectGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-  }
-  
-  #infoBody {
-    position: absolute;
-    top: 80px;
-    margin-bottom: 24px;
-  }
-  
-  #footer {
-    position: fixed;
-    bottom: 0;
-    font-size: 24px;
-    border-top: 2px solid #33ff00;
-    background-color: black;
-    text-align: center;
-    width: 101vw;
-  }
-  
-  @media only screen and (max-width: 1400px) {
-    .header {
-      height: 80px;
-      grid-template-columns: 1fr 1fr;
-    }
-    #infoBody {
-      top: 110px;
-    }
-    .projectGrid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-   */
+.align-right {
+  right: 0;
+}

@@ -1,12 +1,36 @@
 .tab {
-    overflow: hidden;
-    /* border: 1px solid #ccc; */
-    /* background-color: #f1f1f1; */
-    display: flex;
-  }
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background-color: #f1f1f1; */
+  background-color: #303036;
+  display: flex;
+  position: fixed;
+  left: 50px; /* The size of the hamburger menu. Will move farther out upon hamburger menu being opened */
+  top: 0;
+  width: 100%;
+}
 
-  .tabLinks{
-      border-left: 1px solid green;
-      border-right: 1px solid green;
-  }
-  
+.tabLinks {
+  border-left: 0.5px solid black;
+  border-right: 0.5px solid black;
+  width: 100px;
+  height: 30px;
+  background-color: #29293d;
+}
+
+.tabLinks:first-child {
+  border-left: 0;
+}
+.tabLinks:last-child {
+  margin-right: 0;
+}
+
+.tab-button-title {
+  width: 75%;
+  height: 100%;
+}
+
+.tab-button-close {
+  width: 25%;
+  height: 100%;
+}
