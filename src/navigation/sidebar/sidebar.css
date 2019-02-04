@@ -10,18 +10,21 @@ img {
   left: 0;
   top: 0;
   display: flex;
-
-  top: 50px;
+  z-index: 100;
 }
 .sidebar_button_menu {
   text-align: center;
   height: 100%;
-  width: 50px;
+  width: var(--sidebarButtonWidth);
+  background-color: black;
 }
 .sidebar-link_list {
   height: 100%;
-  /* display: none; */
-  width: 500px;
+  width: var(--sidebarWidth);
   display: flex;
   flex-direction: column;
+}
+.sidebar-link_list button {
+  font-size: x-large;
+  padding: 5px 0;
 }

@@ -23,7 +23,7 @@ class Tab extends Component {
           let newDisplayedTabList = [...this.state.displayedTabList];
           newDisplayedTabList.push(this.props.openTab);
           this.setState({ displayedTabList: newDisplayedTabList });
-          this.props.updateopenTab(this.props.openTab);
+          this.props.UpdateOpenTab(this.props.openTab);
         }
       }
     }
@@ -39,27 +39,55 @@ class Tab extends Component {
       return e !== toBeRemoved; //returns everything that isn't our tab
     });
     this.setState({ displayedTabList: newDisplayedTabList });
-    this.props.updateopenTab(newDisplayedTabList[0]);
+    this.props.UpdateOpenTab(newDisplayedTabList[0]);
+  };
+
+  displayTab = tab_name => {
+    if (this.props.openTab !== tab_name) {
+      this.props.UpdateOpenTab(tab_name);
+    }
   };
 
   render() {
     return (
       <div className={"tab"}>
-        {_.map(this.state.displayedTabList, tab_item => (
-          <div className={"tabLinks"} key={tab_item}>
-            <button
-              className={"align-center tab-button-title text_only_button"}
-            >
-              {tab_item}
-            </button>
-            <button
-              className={"align-right tab-button-close text_only_button"}
-              onClick={() => this.removeTab(tab_item)}
-            >
-              X
-            </button>
-          </div>
-        ))}
+        {_.map(this.state.displayedTabList, tab_item => {
+          if (tab_item === this.props.openTab) {
+            return (
+              <div className={"tab_links tab_links-selected"} key={tab_item}>
+                <button
+                  onClick={() => this.displayTab(tab_item)}
+                  className={"align-center tab-button-title text_only_button"}
+                >
+                  {tab_item}
+                </button>
+                <button
+                  className={"align-right tab-button-close text_only_button"}
+                  onClick={() => this.removeTab(tab_item)}
+                >
+                  X
+                </button>
+              </div>
+            );
+          } else {
+            return (
+              <div className={"tab_links"} key={tab_item}>
+                <button
+                  onClick={() => this.displayTab(tab_item)}
+                  className={"align-center tab-button-title text_only_button"}
+                >
+                  {tab_item}
+                </button>
+                <button
+                  className={"align-right tab-button-close text_only_button"}
+                  onClick={() => this.removeTab(tab_item)}
+                >
+                  X
+                </button>
+              </div>
+            );
+          }
+        })}
       </div>
     );
   }

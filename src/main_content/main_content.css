@@ -1,0 +1,8 @@
+#main_content {
+  position: relative;
+  left: var(--leftMargin);
+  top: var(--headerHeight);
+  width: calc(100% - var(--leftMargin) - 1%);
+  height: 100%;
+  padding: 10px 0 10px 10px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Menu from "./menu";
+
 import Tab from "./tab";
+import "./header.css";
 
 class Header extends Component {
   render() {
@@ -9,7 +10,7 @@ class Header extends Component {
         <Tab
           contentList={this.props.contentList}
           openTab={this.props.openTab}
-          updateopenTab={this.props.updateopenTab}
+          UpdateOpenTab={this.props.UpdateOpenTab}
         />{" "}
       </div>
     );

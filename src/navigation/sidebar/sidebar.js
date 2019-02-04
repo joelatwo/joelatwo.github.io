@@ -3,34 +3,27 @@ import image from "../../assets/me.jpg";
 import _ from "lodash";
 
 import "./sidebar.css";
-import Hamburger_Menu from "../../Components/hamburger_menu";
+import HamburgerMenu from "../../Components/hamburger_menu";
 
 class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true,
-
       openTab: null
     };
-    this.HamburgerHandler = this.HamburgerHandler.bind(this);
-  }
-  HamburgerHandler() {
-    console.log(this.state.isOpen);
-    this.setState({ isOpen: !this.state.isOpen });
   }
 
   openTab = e => {
-    this.props.updateopenTab(e);
+    this.props.UpdateOpenTab(e);
   };
 
   render() {
     return (
       <div id="sidebar">
         <div className="sidebar_button_menu">
-          <Hamburger_Menu action={this.HamburgerHandler} />
+          <HamburgerMenu ToggleHamburgerMenu={this.props.ToggleHamburgerMenu} />
         </div>
-        {this.state.isOpen ? (
+        {this.props.isHamburgerOpen ? (
           <div className="sidebar-link_list">
             <img src={image} alt="Joel Atwood" />
             {_.map(this.props.contentList, menu_item => {

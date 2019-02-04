@@ -4,24 +4,40 @@
   /* background-color: #f1f1f1; */
   background-color: #303036;
   display: flex;
-  position: fixed;
-  left: 50px; /* The size of the hamburger menu. Will move farther out upon hamburger menu being opened */
-  top: 0;
+  height: 100%;
   width: 100%;
 }
 
-.tabLinks {
+.tab_links {
   border-left: 0.5px solid black;
   border-right: 0.5px solid black;
-  width: 100px;
-  height: 30px;
+  width: fit-content;
+  white-space: nowrap;
+  height: 100%;
   background-color: #29293d;
 }
 
-.tabLinks:first-child {
+.tab_links button {
+  padding: 0 5px;
+  width: fit-content;
+}
+
+.tab_links:hover button:last-child {
+  visibility: visible;
+}
+
+.tab_links button:last-of-type {
+  visibility: hidden;
+}
+
+.tab_links-selected {
+  background-color: #151515;
+}
+
+.tab_links:first-child {
   border-left: 0;
 }
-.tabLinks:last-child {
+.tab_links:last-child {
   margin-right: 0;
 }
 

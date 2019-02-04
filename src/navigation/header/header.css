@@ -1,0 +1,9 @@
+#header {
+  right: 0;
+  top: 0;
+  position: fixed;
+  width: calc(100% - var(--leftMargin));
+
+  height: var(--headerHeight);
+  z-index: 100;
+}

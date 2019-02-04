@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import "./body.css"
-
-import Navigation from "./navigation/navigation"
+import Navigation from "./navigation/navigation";
+import "./body.css";
 
 class App extends Component {
   render() {
     return (
-     <div>
-<Navigation></Navigation>
-     </div>
+      <div>
+        <Navigation />
+      </div>
     );
   }
 }

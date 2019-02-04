@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import "./hamburger_menu.css";
 
 class HamburgerMenu extends Component {
+  handleClick = () => {
+    this.props.ToggleHamburgerMenu();
+  };
   render() {
     return (
-      <div className="hamburger_menu" onClick={this.props.action.bind(this)}>
+      <button
+        className="hamburger_menu text_only_button"
+        onClick={() => this.handleClick()}
+      >
         <div className="-bar" />
         <div className="-bar" />
         <div className="-bar" />
-      </div>
+      </button>
     );
   }
 }
