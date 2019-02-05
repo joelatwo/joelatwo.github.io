@@ -11,9 +11,9 @@ class Navigation extends Component {
     this.state = {
       contentList: [
         "Home",
-        "Projects",
         "Work Experience",
         "Education",
+        "Projects",
         "Technical Skills",
         "Accomplishments"
       ],

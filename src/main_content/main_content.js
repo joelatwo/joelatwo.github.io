@@ -18,7 +18,7 @@ class MainContent extends Component {
     };
   }
 
-  ChooseConent = () => {
+  ChooseContent = () => {
     // Doesn't have break due to the return
     switch (this.props.openTab) {
       case "Home":
@@ -45,7 +45,7 @@ class MainContent extends Component {
       default:
         return (
           <div>
-            An error occured please contact{" "}
+            An error occurred please contact{" "}
             <a href="haystackjma@gmail.com">Joel Atwood.</a>
           </div>
         );
@@ -53,7 +53,7 @@ class MainContent extends Component {
   };
 
   render() {
-    return <div id="main_content">{this.ChooseConent()}</div>;
+    return <div id="main_content">{this.ChooseContent()}</div>;
   }
 }
 

@@ -17,7 +17,6 @@ class WorkExperience extends Component {
           companyName: "Wyndham Gardens Boise",
           summary: "Hotel front-desk and night auditor",
           url: "www.wyndhamhotels.com/boise/hotel‎",
-
           dateRange: "May 2017 - August 2017"
         },
         {

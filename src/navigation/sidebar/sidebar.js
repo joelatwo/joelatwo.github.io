@@ -3,7 +3,7 @@ import image from "../../assets/me.jpg";
 import _ from "lodash";
 
 import "./sidebar.css";
-import HamburgerMenu from "../../Components/hamburger_menu";
+import HamburgerMenu from "../../components/hamburger_menu";
 
 class Sidebar extends Component {
   constructor(props) {
