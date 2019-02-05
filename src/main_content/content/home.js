@@ -7,9 +7,8 @@ class Home extends Component {
         <h1>About Me</h1>
         <p>
           The thing I love most about Software Development is the infinity of it
-          all. Literally we can build anything within software, all that is
-          needed is time and effort. This is something that makes me fascinated
-          and excited about developing software to solve complex problems.
+          all. Literally we can build anything with software, all that is needed
+          is time and effort. This is something that fascinates and excites me.
         </p>
         <h1>Current Employment</h1>
         <div>
