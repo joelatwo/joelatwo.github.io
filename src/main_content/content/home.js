@@ -21,7 +21,7 @@ class Home extends Component {
             <a href="https://fenwaygroup.com/">Fenway Group</a>
           </h3>
           <p>Full-Stack Web Developer</p>
-          <p>React, Js, Durpal 8, SCRUM, and Java</p>
+          <p>React, Js, Drupal 8, SCRUM, and Java</p>
         </div>
         <div className="section">
           <h1>Education</h1>

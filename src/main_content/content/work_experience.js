@@ -10,7 +10,7 @@ class WorkExperience extends Component {
           companyName: "Fenway Group",
           summary: "Full-Stack Web Developer",
           url: "https://fenwaygroup.com/",
-          technologies: "React, Js, Durpal 8, SCRUM, and Java",
+          technologies: "React, Js, Drupal 8, SCRUM, and Java",
           dateRange: "March 2018 - Current"
         },
         {
