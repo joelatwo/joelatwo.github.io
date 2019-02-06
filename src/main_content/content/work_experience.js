@@ -16,7 +16,6 @@ class WorkExperience extends Component {
         {
           companyName: "Wyndham Gardens Boise",
           summary: "Hotel front-desk and night auditor",
-          url: "www.wyndhamhotels.com/boise/hotel‎",
           dateRange: "May 2017 - August 2017"
         },
         {
@@ -48,12 +47,19 @@ class WorkExperience extends Component {
         <h1>Job Experiences</h1>
         {_.map(this.state.jobList, job => (
           <div key={job.url + job.companyName}>
-            <h2>
-              <a href={job.url}>
+            {job.url === undefined ? (
+              <h3>
                 {job.companyName}: {job.dateRange}
-              </a>
-            </h2>
-            <h3>{job.summary}</h3>
+              </h3>
+            ) : (
+              <h3>
+                <a href={job.url}>
+                  {job.companyName}: {job.dateRange}
+                </a>
+              </h3>
+            )}
+
+            <p>{job.summary}</p>
             <p>{job.technologies}</p>
             <hr />
           </div>

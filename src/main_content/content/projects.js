@@ -39,7 +39,7 @@ class Projects extends Component {
 
           technologies: "C and Linux System utilities",
           text:
-            " Created an application to run different commands based on the Bash shell. I used bash for the longest time and was given the assignment for a class to create a simple version of a shell. I personally struggled with using c inputs up until this assignment."
+            " Created an application to run different commands based on the Bash shell. I used Bash for the longest time and was given the assignment for a class to create a simple version of a shell. I personally struggled with using c inputs up until this assignment."
         },
         {
           title: "Calculator",
@@ -76,30 +76,38 @@ class Projects extends Component {
   }
   render() {
     return (
-      <div className="section">
-        <h1>Projects</h1>
-        <div className="projectGrid">
-          {_.map(this.state.projectList, project => (
-            <div key={project.url + project.title}>
-              <h2>
-                <a href={project.url}>{project.title}</a>
-              </h2>
-              <p>{project.text}</p>
-              <hr />
+      <div>
+        <div className="section">
+          <h1>Projects</h1>
+          <div className="projectGrid">
+            {_.map(this.state.projectList, project => (
+              <div key={project.url + project.title}>
+                {project.url === undefined ? (
+                  <h3>{project.title}</h3>
+                ) : (
+                  <h3>
+                    <a href={project.url}>{project.title}</a>
+                  </h3>
+                )}
+                <p>{project.text}</p>
+                <hr />
+              </div>
+            ))}
+          </div>
+          <div className="section">
+            <h1>Projects in Progress</h1>
+            <div className="projectGrid">
+              {_.map(this.state.projectListInProgress, project => (
+                <div key={project.url + project.title}>
+                  <h3>
+                    <a href={project.url}>{project.title}</a>
+                  </h3>
+                  <p>{project.text}</p>
+                  <hr />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <h1>Projects in Progress</h1>
-        <div className="projectGrid">
-          {_.map(this.state.projectListInProgress, project => (
-            <div key={project.url + project.title}>
-              <h2>
-                <a href={project.url}>{project.title}</a>
-              </h2>
-              <p>{project.text}</p>
-              <hr />
-            </div>
-          ))}
+          </div>
         </div>
       </div>
     );

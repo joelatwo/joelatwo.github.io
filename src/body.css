@@ -11,15 +11,24 @@ body {
   margin: 0 0;
   top: 0;
   overflow: scroll;
+  overflow-x: hidden;
 }
+
 a {
   color: lightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 button {
   color: lightblue;
   cursor: pointer;
 }
+
 .text_only_button {
   padding: 0 0;
   border: none;
@@ -28,6 +37,14 @@ button {
 
 hr {
   border-top: 1px solid lightblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.section {
+  padding-bottom: 30px;
 }
 
 .align-center {

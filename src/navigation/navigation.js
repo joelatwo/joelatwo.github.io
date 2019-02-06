@@ -4,6 +4,7 @@ import $ from "jquery";
 import Sidebar from "./sidebar/sidebar";
 import Header from "./header/header";
 import MainContent from "../main_content/main_content";
+import Footer from "./footer/footer";
 
 class Navigation extends Component {
   constructor(props) {
@@ -60,6 +61,7 @@ class Navigation extends Component {
           isHamburgerOpen={this.state.isHamburgerOpen}
         />
         <MainContent openTab={this.state.openTab} />
+        <Footer />
       </div>
     );
   }
