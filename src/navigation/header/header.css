@@ -1,9 +1,38 @@
 #header {
-  right: 0;
   top: 0;
-  position: fixed;
-  width: calc(100% - var(--leftMargin));
-
-  height: var(--headerHeight);
+  height: 50%;
+  padding-top: 20px;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #0054a6;
+  margin-left: var(--leftMargin);
+  padding-right: 10px;
+}
+
+#headerContainer {
+  position: fixed;
+  height: var(--headerHeight);
+  width: 100%;
+  background-color: #010101;
+  z-index: 100;
+}
+
+.namedTitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #0054a6;
+  padding: 5px 15px;
+  margin-bottom: -3px;
+}
+
+.idealPosition {
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 50px;
 }

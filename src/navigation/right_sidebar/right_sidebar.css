@@ -1,0 +1,25 @@
+#rightSidebar {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: var(--headerHeight);
+  width: calc(var(--rightSidebar) - var(--leftMargin));
+  height: calc(100% - var(--headerHeight));
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.rightSidebarButton {
+  margin: 5px 0;
+}
+
+.contact {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rightSidebarButton a {
+  font-size: 24px;
+  font-weight: normal;
+}

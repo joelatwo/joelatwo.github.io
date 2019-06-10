@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import "./content.css";
 class Accomplishments extends Component {
   render() {
     return (
       <div className="section">
-        <h1>Accomplishments</h1>
+        <h1>Awards</h1>
         <ul>
           <li>Certified SCRUM Developer</li>
           <li>Certified Blockchain Developer</li>

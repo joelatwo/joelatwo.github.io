@@ -1,8 +1,23 @@
 #main_content {
   position: relative;
-  left: var(--leftMargin);
+  left: calc(var(--sidebarWidth) + var(--leftMargin) - 4px);
   top: var(--headerHeight);
-  width: calc(100% - var(--leftMargin) - 1%);
-  height: 100%;
-  padding: 10px 0 10px 10px;
+  width: calc(100% - var(--sidebarWidth) - var(--rightSidebar));
+  height: calc(100% - var(--headerHeight));
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#main_content * {
+  color: black;
+  font-size: 18px;
+}
+
+#main_content_interior {
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
 }

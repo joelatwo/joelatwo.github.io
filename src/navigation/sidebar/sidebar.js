@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import image from "../../assets/me.jpg";
+import Resume from "../../assets/Resume.docx";
 import _ from "lodash";
 
 import "./sidebar.css";
-import HamburgerMenu from "../../components/hamburger_menu";
-
 class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -20,23 +19,29 @@ class Sidebar extends Component {
   render() {
     return (
       <div id="sidebar">
-        <div className="sidebar_button_menu">
-          <HamburgerMenu ToggleHamburgerMenu={this.props.ToggleHamburgerMenu} />
-        </div>
         {this.props.isHamburgerOpen ? (
-          <div className="sidebar-link_list">
+          <div className="sidebarNavigation">
             <img src={image} alt="Joel Atwood" />
             {_.map(this.props.contentList, menu_item => {
               return (
                 <button
                   onClick={() => this.openTab(menu_item)}
-                  className="text_only_button"
+                  className="whiteButton sidebarButton"
                   key={menu_item}
                 >
                   {menu_item}
                 </button>
               );
             })}
+            <button className="whiteButton buttonWrappedLink sidebarButton">
+              <a
+                href={Resume}
+                download="Joel_Atwood_Resume"
+                className="linkAsText"
+              >
+                Resume
+              </a>
+            </button>
           </div>
         ) : (
           <div />

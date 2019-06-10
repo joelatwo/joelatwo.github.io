@@ -22,21 +22,22 @@ class MainContent extends Component {
     // Doesn't have break due to the return
     switch (this.props.openTab) {
       case "Home":
+      case undefined:
         return <Home />;
 
       case "Projects":
         return <Projects />;
 
-      case "Work Experience":
+      case "Experience":
         return <WorkExperience />;
 
       case "Education":
         return <Education />;
 
-      case "Technical Skills":
+      case "Skills":
         return <TechnicalSkills />;
 
-      case "Accomplishments":
+      case "Awards":
         return <Accomplishments />;
 
       case "Hobbies":
@@ -46,14 +47,18 @@ class MainContent extends Component {
         return (
           <div>
             An error occurred please contact{" "}
-            <a href="haystackjma@gmail.com">Joel Atwood.</a>
+            <a href="joelatwooddeveloper@gmail.com">Joel Atwood.</a>
           </div>
         );
     }
   };
 
   render() {
-    return <div id="main_content">{this.ChooseContent()}</div>;
+    return (
+      <div id="main_content">
+        <div id="main_content_interior">{this.ChooseContent()}</div>
+      </div>
+    );
   }
 }
 

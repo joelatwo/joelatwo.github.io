@@ -12,6 +12,15 @@ class Home extends Component {
             is needed is time and effort. This is something that both fascinates
             and excites me.
           </p>
+          <div>
+            <a
+              href="https://github.com/atwo6777"
+              target="_blank"
+              style={{ color: "#417ff2", fontWeight: "bold" }}
+            >
+              My github can be found here.
+            </a>
+          </div>
         </div>
 
         <div className="section">

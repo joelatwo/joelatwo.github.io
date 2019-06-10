@@ -5,14 +5,26 @@ img {
 #sidebar {
   position: fixed;
   height: 100%;
-  width: fit-content;
-  background-color: #303036;
+  width: var(--sidebarWidth);
   left: 0;
-  top: 0;
+  top: var(--headerHeight);
   display: flex;
   z-index: 100;
+  border-left: 3px solid #0054a6;
+  margin-left: var(--leftMargin);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.sidebar_button_menu {
+
+.sidebarNavigation {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebarButton {
+  margin: 5px 0;
+}
+/* .sidebar_button_menu { 
   text-align: center;
   height: 100%;
   width: var(--sidebarButtonWidth);
@@ -27,4 +39,4 @@ img {
 .sidebar-link_list button {
   font-size: x-large;
   padding: 5px 0;
-}
+} */

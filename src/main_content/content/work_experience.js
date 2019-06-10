@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-
+import "./content.css";
 class WorkExperience extends Component {
   constructor(props) {
     super(props);

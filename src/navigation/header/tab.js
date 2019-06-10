@@ -50,19 +50,19 @@ class Tab extends Component {
 
   render() {
     return (
-      <div className={"tab"}>
+      <div className={"tabContainer"}>
         {_.map(this.state.displayedTabList, tab_item => {
           if (tab_item === this.props.openTab) {
             return (
-              <div className={"tab_links tab_links-selected"} key={tab_item}>
+              <div className={"tab openTab"} key={tab_item}>
                 <button
                   onClick={() => this.displayTab(tab_item)}
-                  className={"align-center tab-button-title text_only_button"}
+                  className={"tabText text_only_button"}
                 >
                   {tab_item}
                 </button>
                 <button
-                  className={"align-right tab-button-close text_only_button"}
+                  className={"tabCloseButton text_only_button"}
                   onClick={() => this.removeTab(tab_item)}
                 >
                   X
@@ -71,15 +71,15 @@ class Tab extends Component {
             );
           } else {
             return (
-              <div className={"tab_links"} key={tab_item}>
+              <div className={"tab"} key={tab_item}>
                 <button
                   onClick={() => this.displayTab(tab_item)}
-                  className={"align-center tab-button-title text_only_button"}
+                  className={"tabText text_only_button"}
                 >
                   {tab_item}
                 </button>
                 <button
-                  className={"align-right tab-button-close text_only_button"}
+                  className={"tabCloseButton text_only_button"}
                   onClick={() => this.removeTab(tab_item)}
                 >
                   X

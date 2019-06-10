@@ -4,7 +4,7 @@ class TechnicalSkills extends Component {
   render() {
     return (
       <div className="section">
-        <h1>Technical Skills</h1>
+        <h1>Skills</h1>
         <h4>Working Knowledge</h4>
         <ul>
           <li>Javascript with React</li>

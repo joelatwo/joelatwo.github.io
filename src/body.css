@@ -1,21 +1,26 @@
 body {
-  background-color: #151515;
-  color: lightblue;
-  font-family: "Courier New", Courier, monospace;
-  width: 100%;
-  height: 100%;
-  --sidebarWidth: 200px;
-  --sidebarButtonWidth: 50px;
-  --headerHeight: 30px;
-  --leftMargin: 250px;
+  color: #417ff2;
+  letter-spacing: 1px;
+  width: 100vw;
+  height: 100vh;
+  /* Variables will be inheritted and used for various sizing */
+  --sidebarWidth: 20%;
+  --headerHeight: 160px;
+  --rightSidebar: 20%;
+  --leftMargin: 20px;
   margin: 0 0;
   top: 0;
   overflow: scroll;
   overflow-x: hidden;
+  background-color: #010101;
+}
+
+body * {
+  font-family: "baskerville";
 }
 
 a {
-  color: lightblue;
+  color: #417ff2;
 }
 
 a:hover {
@@ -24,18 +29,27 @@ a:hover {
 }
 
 button {
-  color: lightblue;
+  color: #417ff2;
   cursor: pointer;
 }
 
 .text_only_button {
   padding: 0 0;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
 }
 
-hr {
-  border-top: 1px solid lightblue;
+.whiteButton {
+  background-color: white;
+  border-radius: 10px;
+  border: 4.28px solid #030303;
+  width: 100%;
+  height: 44px;
+  font-size: 24px;
+}
+
+.linkAsText {
+  text-decoration: none;
 }
 
 h1 {
@@ -53,4 +67,19 @@ h1 {
 
 .align-right {
   right: 0;
+}
+
+.buttonWrappedLink:hover,
+.buttonWrappedLink:hover a:hover:hover {
+  color: #417ff2;
+  text-decoration: none;
+}
+
+/* Import custom font */
+@font-face {
+  font-family: "baskerville";
+  src: url("../src/assets/font/baske10-webfont.woff2") format("woff2"),
+    url("../src/assets/font/baske10-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

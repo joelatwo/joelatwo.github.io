@@ -4,7 +4,8 @@ import $ from "jquery";
 import Sidebar from "./sidebar/sidebar";
 import Header from "./header/header";
 import MainContent from "../main_content/main_content";
-import Footer from "./footer/footer";
+
+import RightSidebar from "./right_sidebar/right_sidebar";
 
 class Navigation extends Component {
   constructor(props) {
@@ -12,11 +13,11 @@ class Navigation extends Component {
     this.state = {
       contentList: [
         "Home",
-        "Work Experience",
+        "Experience",
         "Education",
         "Projects",
-        "Technical Skills",
-        "Accomplishments"
+        "Skills",
+        "Awards"
       ],
       openTab: "Home",
       isHamburgerOpen: true
@@ -61,7 +62,7 @@ class Navigation extends Component {
           isHamburgerOpen={this.state.isHamburgerOpen}
         />
         <MainContent openTab={this.state.openTab} />
-        <Footer />
+        <RightSidebar />
       </div>
     );
   }
