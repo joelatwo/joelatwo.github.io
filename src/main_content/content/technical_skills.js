@@ -19,7 +19,6 @@ class TechnicalSkills extends Component {
         <ul>
           <li>Perl</li>
           <li>Bash</li>
-          <li>scripting</li>
           <li>Java</li>
         </ul>
       </div>

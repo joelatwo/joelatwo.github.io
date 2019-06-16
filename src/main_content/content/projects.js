@@ -7,6 +7,13 @@ class Projects extends Component {
     this.state = {
       projectList: [
         {
+          title: "DM's Hoard",
+          url: "https://github.com/atwo6777/DM-Hoard",
+          technologies: "XQuery, Javascript, React, Java, and Nodejs",
+          text:
+            "This was originally a reasearch project with the goal of creating a Natural Language Processing solution for making Dungeons and Dragons easier to play. It is in progress but with include the        ability to ask any question and find multiple options."
+        },
+        {
           title: "Advising Program",
           url: "https://github.com/atwo6777/college_advising",
           technologies: "MySQL, Javascript, React and Nodejs",
@@ -60,7 +67,7 @@ class Projects extends Component {
           title: "Living Dungeons and Dragons Database",
 
           technologies:
-            "React, Js, MongoDB, Stanford NLP Tool suite, and Prolog",
+            "React, Javascript, MongoDB, Stanford NLP Tool suite, and Prolog",
           text:
             "Over the course of the semester I will be designing a database that can create a database from text input and develop the connections necessary automatically. The database will then be able to be queried using a standardized NLP input. From there I will use a machine learning algorithm to allow the database to make updates to itself as necessary."
         },

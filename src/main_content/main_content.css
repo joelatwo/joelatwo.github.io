@@ -1,6 +1,6 @@
 #main_content {
   position: relative;
-  left: calc(var(--sidebarWidth) + var(--leftMargin) - 4px);
+  left: calc(var(--sidebarWidth) + var(--leftMargin) - 7px);
   top: var(--headerHeight);
   width: calc(100% - var(--sidebarWidth) - var(--rightSidebar));
   height: calc(100% - var(--headerHeight));

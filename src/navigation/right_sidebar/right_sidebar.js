@@ -25,6 +25,15 @@ class RightSidebar extends Component {
               LinkedIn
             </a>
           </button>
+          <p>
+            I love programing. I know that I can build anything if I work hard
+            and put in the time. This is why I seek after challenging and
+            engaging projects.
+          </p>
+          <p>
+            I also enjoy being creative with solutions and in my personal life.
+            That is why I play Dungeons and Dragons.
+          </p>
         </div>
       </div>
     );
