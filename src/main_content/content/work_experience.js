@@ -24,7 +24,7 @@ class WorkExperience extends Component {
         },
         {
           companyName: "Aspire SL Start",
-          position: "Assisted disabled individuals learn life skills",
+          position: "Teaching life skills and improving quality of life",
           url: "https://www.slstart.com/",
           dateRange: "May 2015 - August 2015",
           description:
@@ -32,8 +32,7 @@ class WorkExperience extends Component {
         },
         {
           companyName: "Maximus",
-          position:
-            "Assisted individuals sign up for the Affordable Care Act over the phone",
+          position: "Customer Services Associate for the Affordable Care Act",
           dateRange: "October 2014 - February 2015",
           description:
             "Maximus has the primary goal of educating potential Health Inusrance consumers. Because of this they require an indepth knowledge of working closely with everyone."

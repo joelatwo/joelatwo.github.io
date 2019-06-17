@@ -25,14 +25,14 @@ class Projects extends Component {
 
           technologies: "Javascript with React, Typescript, and SCRUM",
           text:
-            "Created a application for keeping track of schedules and choosing optimal meeting times. I wrote an algorithm to determine the optimal meeting times between everyone's schedules. We defined optimal as the time of the day in which the largest quantity of people could attend."
+            "Created an application for keeping track of schedules and choosing optimal meeting times. I wrote an algorithm to determine the optimal meeting times between everyone's schedules. We defined optimal as the time of the day in which the largest quantity of people could attend."
         },
         {
           title: "Twin Stick Shooter Video Game",
           url: "https://github.com/atwo6777/Team4Game",
           technologies: "Unreal Engine and C++",
           text:
-            "Created a dinosaur hunting video game with a group of classmates. This was my first group project in which I learned Git and worked with other classmates' code. I learned a lot about communication and handled the user interface."
+            "Created a dinosaur hunting video game with a group of classmates. This was my first group project in which I learned Git and worked with other classmates' code. I learned a lot about communication and designed the user interface."
         },
         {
           title: "Simulation of the Producer Consumer problem",
@@ -63,14 +63,7 @@ class Projects extends Component {
           text:
             "This is a class project for a machine learning class. I will be responsible for building a neural network that uses a single layer."
         },
-        {
-          title: "Living Dungeons and Dragons Database",
 
-          technologies:
-            "React, Javascript, MongoDB, Stanford NLP Tool suite, and Prolog",
-          text:
-            "Over the course of the semester I will be designing a database that can create a database from text input and develop the connections necessary automatically. The database will then be able to be queried using a standardized NLP input. From there I will use a machine learning algorithm to allow the database to make updates to itself as necessary."
-        },
         {
           title: "VR Tractor Simulator",
 
