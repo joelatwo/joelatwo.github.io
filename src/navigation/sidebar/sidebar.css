@@ -9,7 +9,7 @@ img {
   left: 0;
   top: var(--headerHeight);
   display: flex;
-  z-index: 100;
+  z-index: 99;
   border-left: 3px solid #0054a6;
   margin-left: var(--leftMargin);
   padding: 0 20px;
@@ -23,6 +23,26 @@ img {
 
 .sidebarButton {
   margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    background-color: #010101;
+    margin-left: 0;
+    border-left: 0px;
+    width: 50%;
+  }
+  .closed {
+    width: 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+    transition: 1s;
+  }
+
+  .open {
+    transition: 1s;
+    position: absolute !important;
+  }
 }
 /* .sidebar_button_menu { 
   text-align: center;

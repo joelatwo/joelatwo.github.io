@@ -4,7 +4,10 @@ import "./right_sidebar.css";
 class RightSidebar extends Component {
   render() {
     return (
-      <div id="rightSidebar">
+      <div
+        id="rightSidebar"
+        className={this.props.isHamburgerOpen ? "open" : "closed"}
+      >
         <div className="contact">
           Contact:
           <button className="whiteButton buttonWrappedLink rightSidebarButton">

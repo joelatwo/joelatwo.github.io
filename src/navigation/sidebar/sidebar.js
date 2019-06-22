@@ -18,34 +18,33 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div id="sidebar">
-        {this.props.isHamburgerOpen ? (
-          <div className="sidebarNavigation">
-            <img src={image} alt="Joel Atwood" />
-            {_.map(this.props.contentList, menu_item => {
-              return (
-                <button
-                  onClick={() => this.openTab(menu_item)}
-                  className="whiteButton sidebarButton"
-                  key={menu_item}
-                >
-                  {menu_item}
-                </button>
-              );
-            })}
-            <button className="whiteButton buttonWrappedLink sidebarButton">
-              <a
-                href={Resume}
-                download="Joel_Atwood_Resume"
-                className="linkAsText"
+      <div
+        id="sidebar"
+        className={this.props.isHamburgerOpen ? "open" : "closed"}
+      >
+        <div className="sidebarNavigation">
+          <img src={image} alt="Joel Atwood" />
+          {_.map(this.props.contentList, menu_item => {
+            return (
+              <button
+                onClick={() => this.openTab(menu_item)}
+                className="whiteButton sidebarButton"
+                key={menu_item}
               >
-                Resume
-              </a>
-            </button>
-          </div>
-        ) : (
-          <div />
-        )}
+                {menu_item}
+              </button>
+            );
+          })}
+          <button className="whiteButton buttonWrappedLink sidebarButton">
+            <a
+              href={Resume}
+              download="Joel_Atwood_Resume"
+              className="linkAsText"
+            >
+              Resume
+            </a>
+          </button>
+        </div>
       </div>
     );
   }

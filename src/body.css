@@ -8,6 +8,7 @@ body {
   --headerHeight: 160px;
   --rightSidebar: 20%;
   --leftMargin: 20px;
+  --mainContent: calc(100% - var(--sidebarWidth) - var(--rightSidebar));
   margin: 0 0;
   top: 0;
   overflow: scroll;
@@ -73,6 +74,10 @@ h1 {
 .buttonWrappedLink:hover a:hover:hover {
   color: #417ff2;
   text-decoration: none;
+}
+
+#scrollable {
+  overflow: scroll;
 }
 
 /* Import custom font */

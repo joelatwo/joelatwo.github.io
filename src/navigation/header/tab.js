@@ -22,6 +22,15 @@ class Tab extends Component {
           // if it isn't in the list add it
           let newDisplayedTabList = [...this.state.displayedTabList];
           newDisplayedTabList.push(this.props.openTab);
+
+          // if we are in mobile only 3 tabs can be listed at the top
+          if (
+            window.screen.width < 768 &&
+            this.state.displayedTabList.length >= 3
+          ) {
+            newDisplayedTabList = _.tail(newDisplayedTabList);
+          }
+
           this.setState({ displayedTabList: newDisplayedTabList });
           this.props.UpdateOpenTab(this.props.openTab);
         }
@@ -43,9 +52,7 @@ class Tab extends Component {
   };
 
   displayTab = tab_name => {
-    if (this.props.openTab !== tab_name) {
-      this.props.UpdateOpenTab(tab_name);
-    }
+    this.props.UpdateOpenTab(tab_name);
   };
 
   render() {

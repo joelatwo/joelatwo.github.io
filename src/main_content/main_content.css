@@ -2,7 +2,7 @@
   position: relative;
   left: calc(var(--sidebarWidth) + var(--leftMargin) - 7px);
   top: var(--headerHeight);
-  width: calc(100% - var(--sidebarWidth) - var(--rightSidebar));
+  width: var(--mainContent);
   height: calc(100% - var(--headerHeight));
   padding-top: 10px;
   background-color: white;
@@ -20,4 +20,14 @@
   border: 3px solid black;
   border-radius: 10px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #main_content {
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
 }

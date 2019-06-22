@@ -36,3 +36,24 @@
   color: #ffffff;
   margin-right: 50px;
 }
+
+.hamburger {
+  position: fixed;
+  background-color: white;
+  border-radius: 5px;
+  max-height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  #header * {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .idealPosition {
+    margin-right: 10px;
+  }
+}

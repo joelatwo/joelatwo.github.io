@@ -55,3 +55,27 @@
 .tab:last-of-type {
   margin-right: 0px;
 }
+
+@media (max-width: 768px) {
+  .tabContainer {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  .tab {
+    border-radius: 5px;
+    border-bottom: 0;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .tabText {
+    font-size: 18px;
+  }
+  .tabCloseButton {
+    display: none;
+  }
+  .openTab {
+    border-bottom: 0;
+  }
+}

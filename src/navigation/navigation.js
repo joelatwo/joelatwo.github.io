@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import $ from "jquery";
+import _ from "lodash";
 
 import Sidebar from "./sidebar/sidebar";
 import Header from "./header/header";
@@ -29,21 +29,11 @@ class Navigation extends Component {
   };
 
   UpdateOpenTab = newIndex => {
-    this.setState({ openTab: newIndex });
+    this.setState({ openTab: newIndex, isHamburgerOpen: false });
   };
 
   ToggleHamburgerMenu = () => {
-    this.setState({ isHamburgerOpen: !this.state.isHamburgerOpen }, () => {
-      if (this.state.isHamburgerOpen) {
-        $("body")
-          .get(0)
-          .style.setProperty("--leftMargin", "250px");
-      } else {
-        $("body")
-          .get(0)
-          .style.setProperty("--leftMargin", "50px");
-      }
-    });
+    this.setState({ isHamburgerOpen: !this.state.isHamburgerOpen }, () => {});
   };
 
   render() {
@@ -54,15 +44,20 @@ class Navigation extends Component {
           contentList={this.state.contentList}
           openTab={this.state.openTab}
           isHamburgerOpen={this.state.isHamburgerOpen}
+          ToggleHamburgerMenu={this.ToggleHamburgerMenu}
         />
+
         <Sidebar
           UpdateOpenTab={this.UpdateOpenTab}
           contentList={this.state.contentList}
           ToggleHamburgerMenu={this.ToggleHamburgerMenu}
           isHamburgerOpen={this.state.isHamburgerOpen}
         />
-        <MainContent openTab={this.state.openTab} />
-        <RightSidebar />
+        {this.state.isHamburgerOpen ? null : (
+          <MainContent openTab={this.state.openTab} />
+        )}
+
+        <RightSidebar isHamburgerOpen={this.state.isHamburgerOpen} />
       </div>
     );
   }
