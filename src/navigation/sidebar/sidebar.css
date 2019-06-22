@@ -44,19 +44,3 @@ img {
     position: absolute !important;
   }
 }
-/* .sidebar_button_menu { 
-  text-align: center;
-  height: 100%;
-  width: var(--sidebarButtonWidth);
-  background-color: black;
-}
-.sidebar-link_list {
-  height: 100%;
-  width: var(--sidebarWidth);
-  display: flex;
-  flex-direction: column;
-}
-.sidebar-link_list button {
-  font-size: x-large;
-  padding: 5px 0;
-} */

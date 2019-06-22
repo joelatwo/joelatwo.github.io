@@ -36,10 +36,6 @@ class Tab extends Component {
         }
       }
     }
-
-    // if (this.props.openTab !== nextProps.openTab) {
-    // this.potentialAdd(nextProps.openTab);
-    // }
   }
 
   removeTab = e => {
