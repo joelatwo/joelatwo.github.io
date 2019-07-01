@@ -10,7 +10,7 @@ class Home extends Component {
             I am both a software developer and a computer science student. I
             have worked on full stack web development along with software
             development. My favorite languages to work with are SQL and
-            Javascript. I have worked using several frameworks/methodogies
+            Javascript. I have worked using several frameworks/methodologies
             although my favorite is SCRUM.
           </p>
           <div>
@@ -37,6 +37,11 @@ class Home extends Component {
             mentorship progression program, by working hard and am set to
             complete this program later this year.
           </p>
+          <p>
+            As an employee I worked on an advising application. Due to my work
+            on the optimal meeting logic, we have been able to save the company
+            both time and money.
+          </p>
         </div>
         <div className="section">
           <h1>Education</h1>
@@ -56,8 +61,8 @@ class Home extends Component {
             <p>
               This was originally a reasearch project with the goal of creating
               a Natural Language Processing solution for making Dungeons and
-              Dragons easier to play. It is in progress but with include the
-              ability to ask any question and find multiple options.
+              Dragons easier to play. It is in progress but will include the
+              ability to answer any question about Dungeons and Dragons.
             </p>
           </div>
           <div>

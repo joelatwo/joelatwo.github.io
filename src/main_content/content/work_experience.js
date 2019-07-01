@@ -13,14 +13,14 @@ class WorkExperience extends Component {
           technologies: "React, Javascript, Drupal 8, SCRUM, and Java",
           dateRange: "March 2018 - Current",
           description:
-            "Fenway Group has the primary goal of developing the next generation of software developers. Because of this they use a variety of technologies and languages and work on a variety of projects."
+            "Fenway Group has the primary goal of developing the next generation of software developers. Because of this they use a variety of technologies and languages and work on a variety of projects.\n I have been through the product life cycle for two different projects and are working on a third project that is set to be released later this year."
         },
         {
           companyName: "Wyndham Gardens Boise",
           position: "Hotel front-desk and night auditor",
           dateRange: "May 2017 - August 2017",
           description:
-            "Wyndham Garends Boise has the primary goal of providing the best experience possible on a budget for travelers visiting the Boise area. Because of this they require their employees to go above and beyond for their clients."
+            "Wyndham Garends Boise has the primary goal of providing the best experience possible on a budget for travelers visiting the Boise area. Because of this they require their employees to go above and beyond for their clients. I was able to successfully leave 75% of the customers I dealt with happy about the interaction."
         },
         {
           companyName: "Aspire SL Start",

@@ -20,7 +20,7 @@ class Navigation extends Component {
         "Awards"
       ],
       openTab: "Home",
-      isHamburgerOpen: true
+      isHamburgerOpen: false
     };
   }
 
