@@ -38,7 +38,7 @@ class Sidebar extends Component {
           <button className="whiteButton buttonWrappedLink sidebarButton">
             <a
               href={Resume}
-              download="Joel_Atwood_Resume"
+              download="Joel_Atwood_Resume.docx"
               className="linkAsText"
             >
               Resume
