@@ -23,7 +23,7 @@ class Sidebar extends Component {
         className={this.props.isHamburgerOpen ? "open" : "closed"}
       >
         <div className="sidebarNavigation">
-          <img src={image} alt="Joel Atwood" />
+          <img src={image} alt="Joel Atwood" itemProp="image" />
           {_.map(this.props.contentList, menu_item => {
             return (
               <button
@@ -40,6 +40,7 @@ class Sidebar extends Component {
               href={Resume}
               download="Joel_Atwood_Resume.docx"
               className="linkAsText"
+              itemProp="potentialAction"
             >
               Resume
             </a>

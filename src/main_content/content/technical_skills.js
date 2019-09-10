@@ -7,19 +7,19 @@ class TechnicalSkills extends Component {
         <h1>Skills</h1>
         <h4>Working Knowledge</h4>
         <ul>
-          <li>Javascript with React</li>
-          <li>MySQL</li>
-          <li>C/C++</li>
-          <li>Typescript</li>
-          <li>CSS</li>
+          <li itemProp="knowsLanguage">Javascript with React</li>
+          <li itemProp="knowsLanguage">MySQL</li>
+          <li itemProp="knowsLanguage">C/C++</li>
+          <li itemProp="knowsLanguage">Typescript</li>
+          <li itemProp="knowsLanguage">CSS</li>
           <li>Scrum/Agile Development</li>
           <li>Git version control</li>
         </ul>
         <h4>Basic Knowledge</h4>
         <ul>
-          <li>Perl</li>
-          <li>Bash</li>
-          <li>Java</li>
+          <li itemProp="knowsLanguage">Perl</li>
+          <li itemProp="knowsLanguage">Bash</li>
+          <li itemProp="knowsLanguage">Java</li>
         </ul>
       </div>
     );

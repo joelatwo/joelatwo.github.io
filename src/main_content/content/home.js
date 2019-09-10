@@ -28,7 +28,7 @@ class Home extends Component {
           <h1>Current Employment</h1>
 
           <h3>
-            <a href="https://fenwaygroup.com/">Fenway Group</a>
+            <a href="https://fenwaygroup.com/" itemProp="employee">Fenway Group</a>
           </h3>
           <p>Full-Stack Web Developer</p>
           <p>React, Javascript, Drupal 8, SCRUM, and Java</p>

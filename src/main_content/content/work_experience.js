@@ -56,20 +56,20 @@ class WorkExperience extends Component {
         {_.map(this.state.jobList, job => (
           <div key={job.url + job.companyName}>
             {job.url === undefined ? (
-              <h3>
+              <h3 itemProp="worksFor">
                 {job.companyName}: {job.dateRange}
               </h3>
             ) : (
-              <h3>
-                <a href={job.url}>
-                  {job.companyName}: {job.dateRange}
-                </a>
-              </h3>
-            )}
+                <h3>
+                  <a href={job.url} itemProp="worksFor">
+                    {job.companyName}: {job.dateRange}
+                  </a>
+                </h3>
+              )}
 
-            <p>{job.position}</p>
-            <p>{job.technologies}</p>
-            <p>{job.description}</p>
+            <p itemProp="jobTitle">{job.position}</p>
+            <p itemProp="knowsLanguage">{job.technologies}</p>
+            <p itemProp="description">{job.description}</p>
             <hr />
           </div>
         ))}
