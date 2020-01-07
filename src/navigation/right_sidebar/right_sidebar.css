@@ -4,9 +4,12 @@
   right: 0;
   top: var(--headerHeight);
   width: calc(var(--rightSidebar) - var(--leftMargin));
-  height: calc(100% - var(--headerHeight));
+  height: 90%;
+  height: calc(100% - 10px - var(--headerHeight));
+  overflow-y: auto;
   box-sizing: border-box;
   padding: 0 20px;
+  color: #417ff2;
 }
 
 .rightSidebarButton {

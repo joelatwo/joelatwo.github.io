@@ -17,7 +17,8 @@ class Navigation extends Component {
         "Education",
         "Projects",
         "Skills",
-        "Awards"
+        "Awards",
+        "Resume"
       ],
       openTab: "Home",
       isHamburgerOpen: false

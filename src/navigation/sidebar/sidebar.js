@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import image from "../../assets/me.jpg";
-import Resume from "../../assets/Resume.docx";
+
 import _ from "lodash";
 
 import "./sidebar.css";
@@ -35,15 +35,6 @@ class Sidebar extends Component {
               </button>
             );
           })}
-          <button className="whiteButton buttonWrappedLink sidebarButton">
-            <a
-              href={Resume}
-              download="Joel_Atwood_Resume.docx"
-              className="linkAsText"
-            >
-              Resume
-            </a>
-          </button>
         </div>
       </div>
     );

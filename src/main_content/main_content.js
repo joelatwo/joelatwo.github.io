@@ -7,6 +7,7 @@ import Accomplishments from "./content/accomplishments";
 import Education from "./content/education";
 import Hobbies from "./content/hobbies";
 import TechnicalSkills from "./content/technical_skills";
+import Resume from "./content/resume";
 
 import "./main_content.css";
 
@@ -42,6 +43,9 @@ class MainContent extends Component {
 
       case "Hobbies":
         return <Hobbies />;
+
+      case "Resume":
+        return <Resume></Resume>;
 
       default:
         return (

@@ -1,5 +1,4 @@
 body {
-  color: #417ff2;
   letter-spacing: 1px;
   width: 100vw;
   height: 100vh;
@@ -78,6 +77,15 @@ h1 {
 
 #scrollable {
   overflow: scroll;
+}
+
+.pdf > div > canvas {
+  display: flex !important;
+  height: auto !important;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Import custom font */
