@@ -11,7 +11,7 @@ class RightSidebar extends Component {
         <div className="contact">
           Contact:
           <button className="whiteButton buttonWrappedLink rightSidebarButton">
-            <a
+            <a itemProp="email"
               href="mailto:joelatwooddeveloper@gmail.com"
               target="_top"
               className="linkAsText"

@@ -83,13 +83,13 @@ class Projects extends Component {
             {_.map(this.state.projectList, project => (
               <div key={project.url + project.title}>
                 {project.url === undefined ? (
-                  <h3>{project.title}</h3>
+                  <h3 itemProp="name">{project.title}</h3>
                 ) : (
-                  <h3>
-                    <a href={project.url}>{project.title}</a>
-                  </h3>
-                )}
-                <p>{project.text}</p>
+                    <h3>
+                      <a href={project.url} itemProp="url">{project.title}</a>
+                    </h3>
+                  )}
+                <p itemProp="description">{project.text}</p>
                 <hr />
               </div>
             ))}
