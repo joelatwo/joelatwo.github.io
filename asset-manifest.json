@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9498d7c.chunk.css",
-    "main.js": "/static/js/main.4fa03d49.chunk.js",
-    "main.js.map": "/static/js/main.4fa03d49.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.105f67c5.js",
-    "runtime~main.js.map": "/static/js/runtime~main.105f67c5.js.map",
-    "static/js/2.25bee1e3.chunk.js": "/static/js/2.25bee1e3.chunk.js",
-    "static/js/2.25bee1e3.chunk.js.map": "/static/js/2.25bee1e3.chunk.js.map",
+    "main.css": "/static/css/main.f6d068cd.chunk.css",
+    "main.js": "/static/js/main.c85f4151.chunk.js",
+    "main.js.map": "/static/js/main.c85f4151.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.83083f57.chunk.js": "/static/js/2.83083f57.chunk.js",
+    "static/js/2.83083f57.chunk.js.map": "/static/js/2.83083f57.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4b9daa8fda8efd39e64cc637f3001406.js": "/precache-manifest.4b9daa8fda8efd39e64cc637f3001406.js",
+    "precache-manifest.54046f2e6a8e0fca12c57653d80aa9bc.js": "/precache-manifest.54046f2e6a8e0fca12c57653d80aa9bc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d9498d7c.chunk.css.map": "/static/css/main.d9498d7c.chunk.css.map",
-    "static/media/Resume.docx": "/static/media/Resume.ce22405b.docx",
+    "static/css/main.f6d068cd.chunk.css.map": "/static/css/main.f6d068cd.chunk.css.map",
+    "static/media/Resume.pdf": "/static/media/Resume.351f8501.pdf",
+    "static/media/bash.png": "/static/media/bash.fcc295de.png",
     "static/media/body.css": "/static/media/baske10-webfont.ea916879.woff",
     "static/media/folder_icon.svg": "/static/media/folder_icon.2856dda2.svg",
-    "static/media/me.jpg": "/static/media/me.4dbc6f38.jpg"
+    "static/media/java.png": "/static/media/java.482c0c44.png",
+    "static/media/me.jpg": "/static/media/me.4dbc6f38.jpg",
+    "static/media/perl.png": "/static/media/perl.04780058.png",
+    "static/media/psdi.png": "/static/media/psdi.de5c2453.png",
+    "static/media/react.svg": "/static/media/react.4009eef3.svg"
   }
 }
