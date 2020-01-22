@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import _ from "lodash";
 
 import Sidebar from "./sidebar/sidebar";
 import Header from "./header/header";
@@ -17,7 +16,6 @@ class Navigation extends Component {
         "Education",
         "Projects",
         "Skills",
-        "Awards",
         "Resume"
       ],
       openTab: "Home",

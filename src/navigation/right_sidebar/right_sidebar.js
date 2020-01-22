@@ -11,9 +11,10 @@ class RightSidebar extends Component {
         <div className="contact">
           Contact:
           <button className="whiteButton buttonWrappedLink rightSidebarButton">
-            <a itemProp="email"
+            <a
+              itemProp="email"
               href="mailto:joelatwooddeveloper@gmail.com"
-              target="_top"
+              target="_blank"
               className="linkAsText"
             >
               Email
@@ -28,14 +29,19 @@ class RightSidebar extends Component {
               LinkedIn
             </a>
           </button>
+          <button className="whiteButton buttonWrappedLink rightSidebarButton">
+            <a
+              href="https://github.com/atwo6777"
+              className="linkAsText"
+              target="_blank"
+            >
+              My Github
+            </a>
+          </button>
           <p>
-            I love programing. I know that I can build anything if I work hard
-            and put in the time. This is why I seek after challenging and
-            engaging projects.
-          </p>
-          <p>
-            I also enjoy being creative with solutions and in my personal life.
-            That is why I play Dungeons and Dragons.
+            Passionate problem solver, flexible and collaborative software
+            engineer with 2 years industry experience that knows the benefit of
+            both traditional and outside the box approaches to problems.
           </p>
         </div>
       </div>

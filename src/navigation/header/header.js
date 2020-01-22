@@ -17,7 +17,7 @@ class Header extends Component {
             className={"hamburger"}
             onClick={this.props.ToggleHamburgerMenu}
           >
-            <img src={Menu} />
+            <img src={Menu} alt="menu icon" />
           </button>
         ) : null}
         <Tab

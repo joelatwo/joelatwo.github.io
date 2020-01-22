@@ -8,42 +8,80 @@ class WorkExperience extends Component {
       jobList: [
         {
           companyName: "Fenway Group",
-          position: "Full-Stack Web Developer",
+          position: "Associate Software Engineer",
           url: "https://fenwaygroup.com/",
-          technologies: "React, Javascript, Drupal 8, SCRUM, and Java",
+          technologies: "React, Javascript, Drupal 8, and Java",
           dateRange: "March 2018 - Current",
-          description:
-            "Fenway Group has the primary goal of developing the next generation of software developers. Because of this they use a variety of technologies and languages and work on a variety of projects.\n I have been through the product life cycle for two different projects and are working on a third project that is set to be released later this year."
+          content: (
+            <div>
+              <ul>
+                <li>
+                  Developed a scheduling web application using React,
+                  Typescript, and Postgres
+                </li>
+                <li>Completed Fenway Group’s mentorship program</li>
+                <li>Achieved Professional Scrum Developer I Certification</li>
+              </ul>
+              <p>
+                Fenway group has been a great learning experience during
+                college. I started with no knowledge of javascript, react or any
+                web development but within a few months it became my favorite
+                frontend technology. Beyond that Fenway group has provided me
+                with countless oportunities to grow.
+              </p>
+            </div>
+          )
         },
         {
           companyName: "Wyndham Gardens Boise",
           position: "Hotel front-desk and night auditor",
           dateRange: "May 2017 - August 2017",
-          description:
-            "Wyndham Garends Boise has the primary goal of providing the best experience possible on a budget for travelers visiting the Boise area. Because of this they require their employees to go above and beyond for their clients. I was able to successfully leave 75% of the customers I dealt with happy about the interaction."
+          content: (
+            <p>
+              Wyndam Gardens was a summer job that allowed me to interact with
+              many people. I also had to learn and troubleshoot several systems.
+            </p>
+          )
         },
         {
           companyName: "Aspire SL Start",
           position: "Teaching life skills and improving quality of life",
           url: "https://www.slstart.com/",
           dateRange: "May 2015 - August 2015",
-          description:
-            "Aspire has the primary goal of improving the lives of those people diagnosed with disabilities. Because of this they require patience and adaptation in dealing with constant new and unique situations."
+          content: (
+            <p>
+              At Aspire I learned compation and patience as I helped improve and
+              teach people. I learned from my teamates about indivdual care and
+              performed my duties.
+            </p>
+          )
         },
         {
           companyName: "Maximus",
           position: "Customer Services Associate for the Affordable Care Act",
           dateRange: "October 2014 - February 2015",
-          description:
-            "Maximus has the primary goal of educating potential Health Inusrance consumers. Because of this they require an indepth knowledge of working closely with everyone."
+          content: (
+            <p>
+              Maximus was my first full time job. I remember troubleshooting
+              customer accounts over the phone. I also helped inform and setup
+              customers healthcare.
+            </p>
+          )
         },
         {
-          companyName: "Hiero Games",
+          companyName: "League43",
           position: "3D model and animation developer",
           technologies: "Autodesk Maya and Photoshop",
           dateRange: "May 2014 - September 2014",
-          description:
-            "Hiero Games has the primary goal of creating the vision of their clients multimedia goals. Because of the size of the company I was required to work both independantly and with my coworkers."
+          content: (
+            <p>
+              In high school I discovered 3D modeling using Autodesk Maya and
+              this passion lead me to join SkillsUSA. In the state competition I
+              met Leage43 as the judge of that competition. I then was hired by
+              them as a 3D model and animation developer. I learned about the
+              creative process and a different industries development lifecycle.
+            </p>
+          )
         }
       ]
     };
@@ -52,7 +90,7 @@ class WorkExperience extends Component {
   render() {
     return (
       <div className="section">
-        <h1>Job Experiences</h1>
+        <h1>Work Experiences</h1>
         {_.map(this.state.jobList, job => (
           <div key={job.url + job.companyName}>
             {job.url === undefined ? (
@@ -60,16 +98,16 @@ class WorkExperience extends Component {
                 {job.companyName}: {job.dateRange}
               </h3>
             ) : (
-                <h3>
-                  <a href={job.url} itemProp="worksFor">
-                    {job.companyName}: {job.dateRange}
-                  </a>
-                </h3>
-              )}
+              <h3>
+                <a href={job.url} itemProp="worksFor">
+                  {job.companyName}: {job.dateRange}
+                </a>
+              </h3>
+            )}
 
             <p itemProp="jobTitle">{job.position}</p>
             <p itemProp="knowsLanguage">{job.technologies}</p>
-            <p itemProp="description">{job.description}</p>
+            <p itemProp="content">{job.content}</p>
             <hr />
           </div>
         ))}

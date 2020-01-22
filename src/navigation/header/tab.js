@@ -43,8 +43,10 @@ class Tab extends Component {
     newDisplayedTabList = _.filter(newDisplayedTabList, toBeRemoved => {
       return e !== toBeRemoved; //returns everything that isn't our tab
     });
-    this.setState({ displayedTabList: newDisplayedTabList });
-    this.props.UpdateOpenTab(newDisplayedTabList[0]);
+    if (newDisplayedTabList.length > 0) {
+      this.setState({ displayedTabList: newDisplayedTabList });
+      this.props.UpdateOpenTab(newDisplayedTabList[0]);
+    }
   };
 
   displayTab = tab_name => {

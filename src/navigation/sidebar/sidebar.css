@@ -2,15 +2,19 @@ img {
   max-width: 100%;
 }
 
+#joel_atwood_pic {
+  padding-top: 15px;
+}
+
 #sidebar {
   position: fixed;
   height: 90%;
-  height: calc(100% - 10px - var(--headerHeight));
+  height: 100%;
   width: var(--sidebarWidth);
   left: 0;
-  top: var(--headerHeight);
+  top: calc(var(--headerHeight) - 60px);
   display: flex;
-  z-index: 99;
+  z-index: 199;
   border-left: 3px solid #0054a6;
   margin-left: var(--leftMargin);
   padding: 0 20px;

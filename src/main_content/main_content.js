@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Home from "./content/home";
 import Projects from "./content/projects";
 import WorkExperience from "./content/work_experience";
-import Accomplishments from "./content/accomplishments";
 import Education from "./content/education";
 import Hobbies from "./content/hobbies";
 import TechnicalSkills from "./content/technical_skills";
@@ -25,25 +24,16 @@ class MainContent extends Component {
       case "Home":
       case undefined:
         return <Home />;
-
       case "Projects":
         return <Projects />;
-
       case "Experience":
         return <WorkExperience />;
-
       case "Education":
         return <Education />;
-
       case "Skills":
         return <TechnicalSkills />;
-
-      case "Awards":
-        return <Accomplishments />;
-
       case "Hobbies":
         return <Hobbies />;
-
       case "Resume":
         return <Resume></Resume>;
 

@@ -7,69 +7,89 @@ class Projects extends Component {
     this.state = {
       projectList: [
         {
+          title: "Go Compiler",
+          url: "https://https://github.com/atwo6777/VGo-Compiler",
+          technologies: "Flex, Bison, and C",
+          content: (
+            <p>
+              One of my senior level classes was constructing a Go compiler.
+              Over the course of a semester I built a parser using Flex and
+              Bison. This included handling memory allocation and semi colon
+              insertion. From there I handled Go's semantic analysis and built a
+              Hash table. I then translated the program into intermediate code.
+              I have not finished final code generation for the x86 processor.
+            </p>
+          )
+        },
+        {
           title: "DM's Hoard",
           url: "https://github.com/atwo6777/DM-Hoard",
-          technologies: "XQuery, Javascript, React, Java, and Nodejs",
-          text:
-            "This was originally a reasearch project with the goal of creating a Natural Language Processing solution for making Dungeons and Dragons easier to play. It is in progress but with include the        ability to ask any question and find multiple options."
+          technologies: "Javascript, React, Java, and Nodejs",
+          content: (
+            <p>
+              Dungeons & Dragons is one of my favorite group activities. It
+              allows me to be creative, but with all of the content it can be
+              difficult to keep track of everything. That is why I am working on
+              a personal tool to help keep everything organized. I decided that
+              I wanted to start with spells. I used Java to build a script to
+              web scrape all of the spell data and save it in a json file. From
+              there I developed a frontend to load and display this data.
+            </p>
+          )
         },
         {
           title: "Advising Program",
           url: "https://github.com/atwo6777/college_advising",
           technologies: "MySQL, Javascript, React and Nodejs",
-          text:
-            "Created a database application to advise students on which classes to take based upon what is needed to graduate and for the student's desired occupation. I added an algorithm that determines which classes a student should take next semester. The program determines which classes are needed now to take required classes in the future along with any classes that are useful for a particular career."
+          content: (
+            <p>
+              This project allowed me to explore the connection between both the
+              frontend, the backend, and the server. The project helps users
+              keep track of the classes they have taken and what classes to take
+              for the next 2 semesters. One solution I developed is a query that
+              calculates every classes prerequisite to determine which classes
+              are most important to take next.
+            </p>
+          )
         },
         {
           title: "Scheduling Web Application",
-
           technologies: "Javascript with React, Typescript, and SCRUM",
-          text:
-            "Created an application for keeping track of schedules and choosing optimal meeting times. I wrote an algorithm to determine the optimal meeting times between everyone's schedules. We defined optimal as the time of the day in which the largest quantity of people could attend."
+          content: (
+            <p>
+              This is one of my big projects while working at Fenway Group. I
+              learned a lot about the development lifecycle and several pitfalls
+              to avoid with a large group project. With this I learned the
+              basics of Git and started incorporating Git into every project.
+              Beyond this I got a ton of experience working with a variety of
+              languages and the web technology stack.
+            </p>
+          )
         },
         {
           title: "Twin Stick Shooter Video Game",
           url: "https://github.com/atwo6777/Team4Game",
           technologies: "Unreal Engine and C++",
-          text:
-            "Created a dinosaur hunting video game with a group of classmates. This was my first group project in which I learned Git and worked with other classmates' code. I learned a lot about communication and designed the user interface."
-        },
-        {
-          title: "Simulation of the Producer Consumer problem",
-
-          technologies: "Semaphores and C++",
-          text:
-            "Created a simulation using piping of the producer consumer problem. I used sempaphores due to our class discussion at the time of the sempaphores. It is not much more complicated than a monitor but is a little bit more difficult to use. "
+          content: (
+            <p>
+              This was my first ever group programming assignment. Built in the
+              Unreal Engine I personally developed the user interface for our
+              game. I was also able to help my teamates organized and debug
+              their code.
+            </p>
+          )
         },
         {
           title: "Shell Scripter",
-
           technologies: "C and Linux System utilities",
-          text:
-            " Created an application to run different commands based on the Bash shell. I used Bash for the longest time and was given the assignment for a class to create a simple version of a shell. I personally struggled with using c inputs up until this assignment."
-        },
-        {
-          title: "Calculator",
-          technologies: " Flex, YACC, Regex",
-          text:
-            "This was an assignment to explore Flex and YACC after having built a lexor using just Flex. I added some functionality to store data and variables along with basic calculator functions."
-        }
-      ],
-      projectListInProgress: [
-        {
-          title: "Neural Network",
-
-          technologies: "C++",
-          text:
-            "This is a class project for a machine learning class. I will be responsible for building a neural network that uses a single layer."
-        },
-
-        {
-          title: "VR Tractor Simulator",
-
-          technologies: "Unity and C#",
-          text:
-            "I will create a virtual reality tractor simulator along with several classmates. The goal is to create a training simulation for students to learn how to drive tractors on the Palouse."
+          content: (
+            <p>
+              Bash is a great shell scripter but I was given an assignment to
+              build my own. I included a basic history system, aliasing, and a
+              few other nice features. It of course also allowed me to run other
+              programs and use Linux forking.
+            </p>
+          )
         }
       ]
     };
@@ -85,28 +105,16 @@ class Projects extends Component {
                 {project.url === undefined ? (
                   <h3 itemProp="name">{project.title}</h3>
                 ) : (
-                    <h3>
-                      <a href={project.url} itemProp="url">{project.title}</a>
-                    </h3>
-                  )}
-                <p itemProp="description">{project.text}</p>
+                  <h3>
+                    <a href={project.url} itemProp="url">
+                      {project.title}
+                    </a>
+                  </h3>
+                )}
+                <p itemProp="description">{project.content}</p>
                 <hr />
               </div>
             ))}
-          </div>
-          <div className="section">
-            <h1>Projects in Progress</h1>
-            <div className="projectGrid">
-              {_.map(this.state.projectListInProgress, project => (
-                <div key={project.url + project.title}>
-                  <h3>
-                    <a href={project.url}>{project.title}</a>
-                  </h3>
-                  <p>{project.text}</p>
-                  <hr />
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

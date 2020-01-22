@@ -27,6 +27,11 @@
   font-weight: normal;
 }
 
+#rightSidebar p {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
 @media (max-width: 786px) {
   #rightSidebar {
     background-color: #010101;
