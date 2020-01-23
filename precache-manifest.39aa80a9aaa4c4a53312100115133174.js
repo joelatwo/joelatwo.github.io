@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7b2e2cf3fcb41f8a21d0eddf859ce0c",
+    "revision": "527101b05c0de02459e533c1f1172b8d",
     "url": "/index.html"
   },
   {
-    "revision": "abfa34a78cb9cc16a9c1",
-    "url": "/static/css/main.850906d2.chunk.css"
+    "revision": "2c885b39540f7f13b56e",
+    "url": "/static/css/main.a7e9732c.chunk.css"
   },
   {
     "revision": "5be160fa0742a0d8e7e7",
     "url": "/static/js/2.39eca874.chunk.js"
   },
   {
-    "revision": "abfa34a78cb9cc16a9c1",
-    "url": "/static/js/main.2095fd09.chunk.js"
+    "revision": "2c885b39540f7f13b56e",
+    "url": "/static/js/main.c14ac7d3.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,14 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fcc295dea7beea952e96d787036dcbb5",
     "url": "/static/media/bash.fcc295de.png"
-  },
-  {
-    "revision": "772e1dcb8dfdcb684733e0d0bd144666",
-    "url": "/static/media/baske10-webfont.772e1dcb.woff2"
-  },
-  {
-    "revision": "ea91687971b7bba4302efc860ebf323b",
-    "url": "/static/media/baske10-webfont.ea916879.woff"
   },
   {
     "revision": "f278be7973516129af9e64d45a0c6f4d",
