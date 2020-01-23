@@ -26,6 +26,7 @@
   border: 3px solid #0054a6;
   padding: 5px 15px;
   margin-bottom: -3px;
+  margin-top: 15px;
 }
 
 .idealPosition {
@@ -34,7 +35,8 @@
   font-weight: bold;
   text-align: center;
   color: #ffffff;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-top: 15px;
 }
 
 .hamburger {

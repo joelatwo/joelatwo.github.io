@@ -10,7 +10,7 @@ class Header extends Component {
       <div id="headerContainer">
         <div id="header">
           <div className="namedTitle">Joel Atwood</div>
-          <div className="idealPosition">Full Stack Developer</div>
+          <div className="idealPosition">Software Engineer</div>
         </div>
         {window.screen.width < 768 ? (
           <button
