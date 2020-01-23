@@ -16,7 +16,7 @@ body {
 }
 
 body * {
-  font-family: "baskerville";
+  font-family: Georgia;
 }
 
 a {
@@ -102,13 +102,4 @@ h4 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Import custom font */
-@font-face {
-  font-family: "baskerville";
-  src: url("../src/assets/font/baske10-webfont.woff2") format("woff2"),
-    url("../src/assets/font/baske10-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }

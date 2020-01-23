@@ -13,7 +13,7 @@
   letter-spacing: 0px;
   border-bottom: 5px solid black;
   background-color: #9a9a9a;
-  width: 15%;
+  width: 20%;
   text-align: center;
   border-radius: 10px 10px 0 0;
   margin-left: 5px;
@@ -23,9 +23,9 @@
 .tabText {
   height: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
-  font-family: baskerville;
+  font-family: Georgia;
 }
 
 .tabCloseButton {
