@@ -40,8 +40,7 @@ class RightSidebar extends Component {
           </button>
           <p>
             Passionate problem solver, flexible and collaborative software
-            engineer with 2 years industry experience that knows the benefit of
-            both traditional and outside the box approaches to problems.
+            engineer with 3 years industry experience.
           </p>
         </div>
       </div>

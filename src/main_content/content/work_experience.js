@@ -7,11 +7,43 @@ class WorkExperience extends Component {
     this.state = {
       jobList: [
         {
+          companyName: "Schweitzer Engineering Laboratories",
+          position: "Associate Software Engineer",
+          url: "https://selinc.com/",
+          technologies: "React (Typescript) and C#",
+          dateRange: "November 2020 - Today",
+          content: (
+            <div>
+              <ul>
+                <li>
+                  I collaborate with several teams across many disciplines to
+                  maintain the corporate marketing website.
+                </li>
+                <li>
+                  I developed a new microservice for a separate SaaS platform.
+                </li>
+                <li>I increased build pipeline speed and reliablity.</li>
+                <li>
+                  I mentored fellow team members for React best practices.
+                </li>
+              </ul>
+              <p>
+                SEL has been a great learning experience. One of my favorite
+                aspect of SEL's culture is their values. I believe that their
+                focus on taking ownership and focusing on their customers has
+                helped me become a better engineer. I look forward to learn more
+                lessons and improve my overall knowledge as my career
+                progresses.
+              </p>
+            </div>
+          ),
+        },
+        {
           companyName: "Fenway Group",
           position: "Associate Software Engineer",
           url: "https://fenwaygroup.com/",
           technologies: "React, Javascript, Drupal 8, and Java",
-          dateRange: "March 2018 - Current",
+          dateRange: "March 2018 - March 2020",
           content: (
             <div>
               <ul>
@@ -30,7 +62,7 @@ class WorkExperience extends Component {
                 with countless oportunities to grow.
               </p>
             </div>
-          )
+          ),
         },
         {
           companyName: "Wyndham Gardens Boise",
@@ -41,7 +73,7 @@ class WorkExperience extends Component {
               Wyndam Gardens was a summer job that allowed me to interact with
               many people. I also had to learn and troubleshoot several systems.
             </p>
-          )
+          ),
         },
         {
           companyName: "Aspire SL Start",
@@ -54,7 +86,7 @@ class WorkExperience extends Component {
               teach people. I learned from my teamates about indivdual care and
               performed my duties.
             </p>
-          )
+          ),
         },
         {
           companyName: "Maximus",
@@ -66,7 +98,7 @@ class WorkExperience extends Component {
               customer accounts over the phone. I also helped inform and setup
               customers healthcare.
             </p>
-          )
+          ),
         },
         {
           companyName: "League43",
@@ -81,9 +113,9 @@ class WorkExperience extends Component {
               them as a 3D model and animation developer. I learned about the
               creative process and a different industries development lifecycle.
             </p>
-          )
-        }
-      ]
+          ),
+        },
+      ],
     };
   }
 
@@ -91,7 +123,7 @@ class WorkExperience extends Component {
     return (
       <div className="section">
         <h1>Work Experiences</h1>
-        {_.map(this.state.jobList, job => (
+        {_.map(this.state.jobList, (job) => (
           <div key={job.url + job.companyName}>
             {job.url === undefined ? (
               <h3 itemProp="worksFor">

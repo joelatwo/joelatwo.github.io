@@ -7,12 +7,10 @@ class Home extends Component {
         <div className="section">
           <h1>About Me</h1>
           <p>
-            I am both a software developer and a computer science graduate. I
-            have worked on full stack web development along with software
-            development. My favorite is backend development and writing database
-            queries, beyond that I enjoy frontend development using the web tech
-            stack. I have worked using several frameworks/methodologies although
-            my favorite is SCRUM.
+            I have worked on full stack web development for approximately 3
+            years. My favorite backend technology is .NET with Typescript
+            (React) for the frontend. I currently prefer Kanban for project
+            management.
           </p>
           <div>
             <a
@@ -20,7 +18,7 @@ class Home extends Component {
               target="_blank"
               style={{
                 color: "#417ff2",
-                fontWeight: "bold"
+                fontWeight: "bold",
               }}
             >
               <h4>My github can be found here.</h4>
@@ -32,26 +30,29 @@ class Home extends Component {
           <h1>Current Employment</h1>
 
           <h3>
-            <a href="https://fenwaygroup.com/" itemProp="employee">
-              Fenway Group
+            <a href="https://selinc.com/" itemProp="employee">
+              Schweitzer Engineering Laboratories
             </a>
           </h3>
 
           <div>
             <ul>
               <li>
-                Developed a scheduling web application using React, Typescript,
-                and Postgres
+                I collaborate with several teams across many disciplines to
+                maintain the corporate marketing website.
               </li>
-              <li>Completed Fenway Group’s mentorship program</li>
-              <li>Achieved Professional Scrum Developer I Certification</li>
+              <li>
+                I developed a new microservice for a separate SaaS platform.
+              </li>
+              <li>I increased build pipeline speed and reliablity.</li>
+              <li>I mentored fellow team members for React best practices.</li>
             </ul>
             <p>
-              Fenway group has been a great learning experience during college.
-              I started with no knowledge of javascript, react or any web
-              development but within a few months it became my favorite frontend
-              technology. Beyond that Fenway group has provided me with
-              countless oportunities to grow.
+              SEL has been a great learning experience. One of my favorite
+              aspect of SEL's culture is their values. I believe that their
+              focus on taking ownership and focusing on their customers has
+              helped me become a better engineer. I look forward to learn more
+              lessons and improve my overall knowledge as my career progresses.
             </p>
           </div>
         </div>
@@ -65,7 +66,7 @@ class Home extends Component {
         </div>
 
         <div className="section">
-          <h1>Favorite Projects</h1>
+          <h1>Favorite Personal Projects</h1>
           <div>
             <h3>
               <a href="https://https://github.com/atwo6777/VGo-Compiler">
