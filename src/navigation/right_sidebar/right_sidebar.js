@@ -13,7 +13,7 @@ class RightSidebar extends Component {
           <button className="whiteButton buttonWrappedLink rightSidebarButton">
             <a
               itemProp="email"
-              href="mailto:joelatwooddeveloper@gmail.com"
+              href="mailto:joelatwo@gmail.com"
               target="_blank"
               className="linkAsText"
             >
@@ -22,7 +22,7 @@ class RightSidebar extends Component {
           </button>
           <button className="whiteButton buttonWrappedLink rightSidebarButton">
             <a
-              href="https://www.linkedin.com/in/joelatwooddeveloper"
+              href="https://www.linkedin.com/in/joelatwo"
               className="linkAsText"
               target="_blank"
             >
@@ -31,7 +31,7 @@ class RightSidebar extends Component {
           </button>
           <button className="whiteButton buttonWrappedLink rightSidebarButton">
             <a
-              href="https://github.com/atwo6777"
+              href="https://github.com/joelatwo"
               className="linkAsText"
               target="_blank"
             >

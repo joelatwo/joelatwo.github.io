@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://atwo6777.github.io/",
+  "homepage": "https://joelatwo.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "jquery": "^3.4.1",

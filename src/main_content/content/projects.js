@@ -8,7 +8,7 @@ class Projects extends Component {
       projectList: [
         {
           title: "Go Compiler",
-          url: "https://https://github.com/atwo6777/VGo-Compiler",
+          url: "https://https://github.com/joelatwo/VGo-Compiler",
           technologies: "Flex, Bison, and C",
           content: (
             <p>
@@ -19,11 +19,11 @@ class Projects extends Component {
               Hash table. I then translated the program into intermediate code.
               I have not finished final code generation for the x86 processor.
             </p>
-          )
+          ),
         },
         {
           title: "DM's Hoard",
-          url: "https://github.com/atwo6777/DM-Hoard",
+          url: "https://github.com/joelatwo/DM-Hoard",
           technologies: "Javascript, React, Java, and Nodejs",
           content: (
             <p>
@@ -35,11 +35,11 @@ class Projects extends Component {
               web scrape all of the spell data and save it in a json file. From
               there I developed a frontend to load and display this data.
             </p>
-          )
+          ),
         },
         {
           title: "Advising Program",
-          url: "https://github.com/atwo6777/college_advising",
+          url: "https://github.com/joelatwo/college_advising",
           technologies: "MySQL, Javascript, React and Nodejs",
           content: (
             <p>
@@ -50,7 +50,7 @@ class Projects extends Component {
               calculates every classes prerequisite to determine which classes
               are most important to take next.
             </p>
-          )
+          ),
         },
         {
           title: "Scheduling Web Application",
@@ -64,11 +64,11 @@ class Projects extends Component {
               Beyond this I got a ton of experience working with a variety of
               languages and the web technology stack.
             </p>
-          )
+          ),
         },
         {
           title: "Twin Stick Shooter Video Game",
-          url: "https://github.com/atwo6777/Team4Game",
+          url: "https://github.com/joelatwo/Team4Game",
           technologies: "Unreal Engine and C++",
           content: (
             <p>
@@ -77,7 +77,7 @@ class Projects extends Component {
               game. I was also able to help my teamates organized and debug
               their code.
             </p>
-          )
+          ),
         },
         {
           title: "Shell Scripter",
@@ -89,9 +89,9 @@ class Projects extends Component {
               few other nice features. It of course also allowed me to run other
               programs and use Linux forking.
             </p>
-          )
-        }
-      ]
+          ),
+        },
+      ],
     };
   }
   render() {
@@ -100,7 +100,7 @@ class Projects extends Component {
         <div className="section">
           <h1>Projects</h1>
           <div className="projectGrid">
-            {_.map(this.state.projectList, project => (
+            {_.map(this.state.projectList, (project) => (
               <div key={project.url + project.title}>
                 {project.url === undefined ? (
                   <h3 itemProp="name">{project.title}</h3>

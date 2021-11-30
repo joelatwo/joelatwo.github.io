@@ -14,7 +14,7 @@ class Home extends Component {
           </p>
           <div>
             <a
-              href="https://github.com/atwo6777"
+              href="https://github.com/joelatwo"
               target="_blank"
               style={{
                 color: "#417ff2",
@@ -69,7 +69,7 @@ class Home extends Component {
           <h1>Favorite Personal Projects</h1>
           <div>
             <h3>
-              <a href="https://https://github.com/atwo6777/VGo-Compiler">
+              <a href="https://https://github.com/joelatwo/VGo-Compiler">
                 Go Compiler
               </a>
             </h3>
@@ -84,7 +84,7 @@ class Home extends Component {
             </p>
 
             <h3>
-              <a href="https://github.com/atwo6777/DM-Hoard">DM's Hoard</a>
+              <a href="https://github.com/joelatwo/DM-Hoard">DM's Hoard</a>
             </h3>
             <p>Javascript, React, Java, and Nodejs</p>
             <p>
@@ -97,7 +97,7 @@ class Home extends Component {
               there I developed a frontend to load and display this data.
             </p>
             <h3>
-              <a href="https://github.com/atwo6777/college_advising">
+              <a href="https://github.com/joelatwo/college_advising">
                 Advising Program
               </a>
             </h3>

@@ -14,7 +14,7 @@ class MainContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: <Home />
+      content: <Home />,
     };
   }
 
@@ -41,7 +41,7 @@ class MainContent extends Component {
         return (
           <div>
             An error occurred please contact{" "}
-            <a href="joelatwooddeveloper@gmail.com">Joel Atwood.</a>
+            <a href="joelatwo@gmail.com">Joel Atwood.</a>
           </div>
         );
     }
