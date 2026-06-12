@@ -1,0 +1,60 @@
+{
+    "title": "Joel Atwood",
+    "description": "Personal website of Joel Atwood",
+    "job": "Software Engineer",
+    "email": "joelatwo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/joelatwo/",
+    "github": "https://github.com/joelatwo",
+    "languages": [
+        {
+            "name": "JavaScript",
+            "level": 5
+        },
+        {
+            "name": "React",
+            "level": 5
+        },
+        {
+            "name": "C#",
+            "level": 3
+        },
+        {
+            "name": "C",
+            "level": 2
+        },
+        {
+            "name": "MySQL/PostgreSQL",
+            "level": 2
+        },
+        {
+            "name": "Godot",
+            "level": 2
+        }
+    ],
+    "softSkills": [
+        {
+            "name": "Problem Solving",
+            "level": 5
+        },
+        {
+            "name": "Leadership",
+            "level": 3
+        },
+        {
+            "name": "Project Management",
+            "level": 3
+        },
+        {
+            "name": "Adaptability",
+            "level": 4
+        },
+        {
+            "name": "Time Management",
+            "level": 4
+        },
+        {
+            "name": "UI/UX Design",
+            "level": 2
+        }
+    ]
+}

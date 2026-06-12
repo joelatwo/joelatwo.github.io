@@ -1,10 +1,15 @@
 <template>
-  <NuxtRouteAnnouncer />
-  <Layout>  
+  <NuxtLayout>  
     <NuxtPage />
-  </Layout>
+    <NuxtRouteAnnouncer />
+  </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-import Layout from '@/components/Layout.vue'
-</script>
+<style>
+html, body, #__nuxt {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}  
+</style>
