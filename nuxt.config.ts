@@ -1,13 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from "url";
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content',
-  ],
+  modules: ["@nuxt/content", "@nuxt/ui"],
   alias: {
-    '@': fileURLToPath(new URL('./app', import.meta.url))
+    "@": fileURLToPath(new URL("./app", import.meta.url)),
   },
   devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
-})
+  compatibilityDate: "2024-04-03",
+});
