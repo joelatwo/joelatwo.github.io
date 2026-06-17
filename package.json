@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.14.0",
-    "better-sqlite3": "^12.10.0",
+    "better-sqlite3": "^12.11.1",
     "nuxt": "^4.4.7",
     "vue": "^3.5.35",
     "vue-router": "^5.1.0"
+  },
+  "optionalDependencies": {
+    "@oxc-parser/binding-win32-x64-msvc": "^0.133.0"
   }
 }
