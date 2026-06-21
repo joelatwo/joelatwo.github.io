@@ -1,10 +1,16 @@
 <template>
   <div style="border: 2px solid black">
     <div>
-      <h1>Joel Atwood</h1>
-      <p>Software Engineer</p>
+      <pre>{{ data }}</pre>
     </div>
   </div>
 
   <div style="border: 2px solid black"></div>
 </template>
+
+<script setup lang="ts">
+const { data } = await useAsyncData("index", () =>
+  queryContent("content").path("/").first(),
+);
+console.log(data, data.value);
+</script>

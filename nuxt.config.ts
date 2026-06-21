@@ -3,9 +3,6 @@ import { fileURLToPath } from "url";
 
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui"],
-  alias: {
-    "@": fileURLToPath(new URL("./app", import.meta.url)),
-  },
   devtools: { enabled: true },
   compatibilityDate: "2024-04-03",
 });
