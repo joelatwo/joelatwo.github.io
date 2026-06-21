@@ -1,37 +1,28 @@
 {
-  "name": "website",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joelatwo.github.io/",
-  "dependencies": {
-    "gh-pages": "^2.0.1",
-    "jquery": "^3.4.1",
-    "lodash": "^4.17.11",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-pdf": "^4.1.0",
-    "react-scripts": "^3.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && npm run deployGit",
-    "deployGit": "gh-pages --branch master -d build",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "npm run css && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "css": "node ./build-css-imports.mjs"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "file-loader": "^4.0.0",
-    "url-loader": "^2.0.0"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "sass": "^1.101.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
