@@ -1,6 +1,7 @@
 export interface ContentItem {
   type: string;
   text: string;
+  id: string;
 }
 
 export interface Project {
