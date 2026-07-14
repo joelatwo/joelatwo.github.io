@@ -1,37 +1,44 @@
-import type { Project } from '@/types';
+import type { Project } from "@/types";
 
 const project: Project = {
-  "title": "Selinc.com",
-  "description": "A large public marketing website migration from AngularJS to React. This includes translation, zero downtime, and gradual migration.",
-  "status": "Previous",
-  "content": [
+  title: "Selinc.com",
+  description:
+    "A large public marketing website migration from AngularJS to React. This includes translation, zero downtime, and gradual migration.",
+  status: "Previous",
+  content: [
     {
-      "type": "paragraph",
-      "text": "The goal for this website was to migrate from an old AngularJS website to a modern React website. This process was planned to take 2 years, which required us to build a system to allow for the strangler pattern. In addition, we wanted to migrate from an old headless CMS to a newer headless CMS."
+      id: "Overview",
+      type: "paragraph",
+      text: "The goal for this website was to migrate from an old AngularJS website to a modern React website. This process was planned to take 2 years, which required us to build a system to allow for the strangler pattern. In addition, we wanted to migrate from an old headless CMS to a newer headless CMS.",
     },
     {
-      "type": "paragraph",
-      "text": "This lead to some technical challenges where I was tasked with creating a prototype site, where both the AngularJS ad React pages were currently availiable. Doing research we settled upon Next.js as it allwed for improved routing, image optimization, and translations. The solution was to setup the React pages to redirect to the AngularJS pages if they page isn't a known route. The AngularJS site would have a list of known React routes to redirect as well. Otherwse we navigate to a 404 page."
+      id: "Prototyping",
+      type: "paragraph",
+      text: "This lead to some technical challenges where I was tasked with creating a prototype site, where both the AngularJS ad React pages were currently availiable. Doing research we settled upon Next.js as it allwed for improved routing, image optimization, and translations. The solution was to setup the React pages to redirect to the AngularJS pages if they page isn't a known route. The AngularJS site would have a list of known React routes to redirect as well. Otherwse we navigate to a 404 page.",
     },
     {
-      "type": "paragraph",
-      "text": "From there I designed a system to leverage the modular block techniques on the CMS to dynamically render content. This created a tree like structure based on the content for a given page allowing a significant decrease in the time to develop new pages. It also gave us extreme flexibility in the tyes of pages requiring us to only design a few custom templates."
+      id: "ContentManagement",
+      type: "paragraph",
+      text: "From there I designed a system to leverage the modular block techniques on the CMS to dynamically render content. This created a tree like structure based on the content for a given page allowing a significant decrease in the time to develop new pages. It also gave us extreme flexibility in the tyes of pages requiring us to only design a few custom templates.",
     },
     {
-      "type": "paragraph",
-      "text": "During this same time my coworkers were working on designing the search module, handling maintainance, and data migration."
-    }
+      id: "Coworkers Contributions",
+      type: "paragraph",
+      text: "During this same time my coworkers were working on designing the search module, handling maintainance, and data migration.",
+    },
   ],
-  "lessonsLearned": [
+  lessonsLearned: [
     {
-      "type": "paragraph",
-      "text": "About 60% of the way through the process, I discovered that Next.js supported a reverse proxy setup that would have given us a lot of benefits for handling routing. This would have allowed us save all of the routing logic in code, without relying on azure front door. The lesson I would have done is kept a closer eye on new features coming to Next.js and re-evaluated the library a bit more frequently. I also think I should have pushed more strongly for making that change after the discovery as it would benefit us long term."
+      id: "Relearning",
+      type: "paragraph",
+      text: "About 60% of the way through the process, I discovered that Next.js supported a reverse proxy setup that would have given us a lot of benefits for handling routing. This would have allowed us save all of the routing logic in code, without relying on azure front door. The lesson I would have done is kept a closer eye on new features coming to Next.js and re-evaluated the library a bit more frequently. I also think I should have pushed more strongly for making that change after the discovery as it would benefit us long term.",
     },
     {
-      "type": "paragraph",
-      "text": "To keep the 2 websites feeling like 1 website we decided to inject the navigation menu from the React site into the AngularJS website. This caused some significant difficulties figuring out how to do this. 2 of us spent about a month working through this process, and we ended up injecting the whole thing as a script. While this works I definitley think we could have done better. I also learned that css scoping is an extremely powerful tool that allowed us to ensure there wasn't any bleeding styles. With the benefit of hindsight I also think I shouldn't have been as precious about the way we ejected the code."
-    }
-  ]
+      id: "SharedCode",
+      type: "paragraph",
+      text: "To keep the 2 websites feeling like 1 website we decided to inject the navigation menu from the React site into the AngularJS website. This caused some significant difficulties figuring out how to do this. 2 of us spent about a month working through this process, and we ended up injecting the whole thing as a script. While this works I definitley think we could have done better. I also learned that css scoping is an extremely powerful tool that allowed us to ensure there wasn't any bleeding styles. With the benefit of hindsight I also think I shouldn't have been as precious about the way we ejected the code.",
+    },
+  ],
 };
 
 export default project;
