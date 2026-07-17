@@ -4,7 +4,8 @@ const project: Project = {
   title: "Device Manager Website",
   description:
     "When you own a significant amount of products it can be difficult to keep track of them all. The goal was to create a prototype project to handle large amounts of products. This includes table based data, filtering, sorting and searching.",
-  status: "Previous",
+  tagList: ["Work"],
+  skills: ["React", "Typescript", "C#", "Postgres"],
   content: [
     {
       id: "Overview",

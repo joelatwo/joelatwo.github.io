@@ -7,9 +7,12 @@
     "build": "npm run css && next build",
     "start": "next start",
     "lint": "eslint",
-    "css": "node ./build-css-imports.mjs"
+    "css": "node ./build-css-imports.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.2.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4"

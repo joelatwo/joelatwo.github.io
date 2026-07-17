@@ -4,7 +4,8 @@ const project: Project = {
   title: "SchedulingApp",
   description:
     "This app was designed to keep track of a large number of employee schedules, that are constantly changing.",
-  status: "Previous",
+  tagList: ["Work"],
+  skills: ["React", "Javascript", "NodeJs"],
   content: [
     {
       id: "Overview",

@@ -4,7 +4,8 @@ const project: Project = {
   title: "Drupal Marketing Website",
   description:
     "A traditional CMS based website built using Drupal to show off the capabilities of the company.",
-  status: "Previous",
+  tagList: ["Work"],
+  skills: ["Javascript", "HTML", "CSS"],
   content: [
     {
       id: "Overview",

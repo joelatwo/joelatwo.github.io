@@ -1,0 +1,14 @@
+.coreCharacterSheet {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.mainCharacterSheet {
+}
+
+.skillsList {
+}
+
+.skillItem {
+  display: flex;
+}

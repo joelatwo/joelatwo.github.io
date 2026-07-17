@@ -4,7 +4,8 @@ const project: Project = {
   title: "Atomic Design System and Component Library",
   description:
     "A series of react components that make the foundational building blocks to increase speed and consistency.",
-  status: "",
+  tagList: ["Work"],
+  skills: ["React", "Typescript", "Sass"],
   content: [
     {
       id: "Beginning",

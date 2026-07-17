@@ -7,7 +7,8 @@ export interface ContentItem {
 export interface Project {
   title: string;
   description: string;
-  status: string;
+  tagList: string[];
   content: ContentItem[];
   lessonsLearned: ContentItem[];
+  skills: string[];
 }

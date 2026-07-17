@@ -38,7 +38,7 @@ export const DrupalWebsite: NavigationItem = {
 };
 export const SchedulingApp: NavigationItem = {
   path: "/projects/schedulingApp",
-  name: "Scheduling",
+  name: "Scheduling App",
 };
 
 // Collection of all paths for navigation

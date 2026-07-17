@@ -2,9 +2,10 @@ import type { Project } from "@/types";
 
 const project: Project = {
   title: "Selinc.com",
+  skills: ["React", "Typescript", "C#", "NextJs", "MySql", "Sass"],
+  tagList: ["Work"],
   description:
     "A large public marketing website migration from AngularJS to React. This includes translation, zero downtime, and gradual migration.",
-  status: "Previous",
   content: [
     {
       id: "Overview",

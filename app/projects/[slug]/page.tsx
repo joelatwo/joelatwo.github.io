@@ -4,9 +4,9 @@ import { Project } from "@/types/index";
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params
+  const { slug } = await params;
   const data: Project = await getContent(`projects/${slug}`);
   return (
     <>
@@ -14,7 +14,7 @@ export default async function Page({
         <div>
           <h1>{data.title}</h1>
           <p>{data.description}</p>
-          <div>{data.status}</div>
+          {/* <div>{data.}</div> */}
 
           <h2>Project Story</h2>
           <div>
@@ -23,9 +23,7 @@ export default async function Page({
             ))}
           </div>
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </div>
       <div id="right">
         <h2>Lessons Learned</h2>
