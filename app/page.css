@@ -4,6 +4,26 @@
 }
 
 .mainCharacterSheet {
+  padding-right: 0.5rem;
+
+  li {
+    margin: 0.5rem;
+  }
+}
+
+.characterSheetHeader {
+  padding-right: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+  .characterSheetHeaderRow {
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 .skillsList {
@@ -11,4 +31,21 @@
 
 .skillItem {
   display: flex;
+  justify-content: space-between;
+}
+
+.starRating {
+}
+
+.sideBar {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.companyName {
+  margin-bottom: 0;
+}
+
+.jobTitle {
+  margin-top: 0;
 }

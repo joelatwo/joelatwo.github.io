@@ -1,0 +1,47 @@
+.navigation {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: normal;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 16px;
+  }
+
+  li {
+    padding-left: 0;
+  }
+
+  .navigationLink {
+    color: black;
+    margin: 0.5rem 0;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footstepsIcon {
+      vertical-align: middle;
+    }
+  }
+
+  .navigationLink:hover {
+    .footstepsIcon.right {
+      margin-left: 16px;
+      transition: margin 0.5s;
+    }
+  }
+
+  .footstepsIcon.right {
+    margin-left: 0;
+    transform: rotate(90deg);
+  }
+}

@@ -3,6 +3,7 @@ import { Navigation } from "@/app/components/Navigation";
 import { Rating, Typography } from "@mui/material";
 import { skills } from "@/data/skills";
 import { StarRating } from "./components/StarRating";
+import Link from "next/link";
 
 const skillsList = Object.entries(skills);
 
@@ -15,17 +16,38 @@ export default async function Home() {
         <Navigation />
       </div>
       <div id="right">
-        <h1>{data.title}</h1>
+        <h1>Joel Atwood</h1>
+        <div className="characterSheetHeader">
+          <p className="title">Full-Stack Software Engineer</p>
+          <Link href="mailto:joelatwo@gmail.com">joelatwo@gmail.com</Link>
+          <p className="experience">
+            <b>Experience:</b> 7 Years
+          </p>
+          <p className="education">
+            <b>Education:</b> B.S. Computer Science
+          </p>
 
-        <p>{data.description}</p>
+          <Link href="https://www.linkedin.com/in/joelatwo/">
+            linkedin.com/in/joelatwo/
+          </Link>
+          <Link href="https://github.com/joelatwo">github.com/joelatwo</Link>
+          {/* </div> */}
+        </div>
 
         <div className="coreCharacterSheet">
           <div className="mainCharacterSheet">
+            <h2>Background</h2>
+            <p className="description">
+              I build software to solve people's problems. The best part of my
+              day is delighting someone with a solution that will make their day
+              better. This allows me to build meaningful relationships with my
+              stakeholders and fellow engineers.
+            </p>
             <h2>Experience</h2>
 
             <div>
-              <h3>Idaho State Government</h3>
-              <p>Software Engineer 3</p>
+              <h3 className="companyName">Idaho State Government</h3>
+              <p className="jobTitle">Software Engineer 3</p>
               <ul>
                 <li>
                   Increased team development speed by 40% by architecting a
@@ -45,8 +67,10 @@ export default async function Home() {
             </div>
 
             <div>
-              <h3>Schweitzer Engineering Laboratories</h3>
-              <p>Software Engineer</p>
+              <h3 className="companyName">
+                Schweitzer Engineering Laboratories
+              </h3>
+              <p className="jobTitle">Software Engineer</p>
               <ul>
                 <li>
                   Led development of a design system and component library,
@@ -66,8 +90,8 @@ export default async function Home() {
             </div>
 
             <div>
-              <h3>Fenway Group</h3>
-              <p>Associate Software Engineer</p>
+              <h3 className="companyName">Fenway Group</h3>
+              <p className="jobTitle">Associate Software Engineer</p>
               <ul>
                 <li>
                   Designed and built a smart scheduling tool that automatically

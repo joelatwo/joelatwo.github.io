@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/styles/globals.css";
-import BookImage from "@/app/assets/NoteBook.png"
+import BookImage from "@/app/assets/NoteBook.png";
 import Image from "next/image";
 
 const geistSans = Geist({
@@ -31,11 +31,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <div className="layoutBackground">
-          <Image src={BookImage} alt="Book Background Image" className="layoutBackgroundImage" />
+          <Image
+            src={BookImage}
+            alt="Book Background Image"
+            className="layoutBackgroundImage"
+          />
           <div className="layoutContent">
-            <div className="layoutContentInner">
-              {children}
-            </div>
+            <div className="layoutContentInner">{children}</div>
           </div>
         </div>
       </body>

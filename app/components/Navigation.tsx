@@ -1,19 +1,25 @@
 import NavigationData from "@/data/navigation";
 import { NavigationItem } from "@/data/types";
+import Image from "next/image";
 import Link from "next/link";
+import footsteps from "@/app/assets/footsteps.png";
+import { Fragment } from "react/jsx-runtime";
 
 export const Navigation = () => {
   return (
-    <div>
+    <div className="navigation">
       <h2>Contents</h2>
       <nav>
         <ul>
           {NavigationData.map((item) => {
             if ("paths" in item) {
               return (
-                <li key={item.parentPath.path}>
+                <Fragment key={item.parentPath.path}>
                   <h3>
-                    <a href={item.parentPath.path}>{item.parentPath.name}</a>
+                    <NavigationLink
+                      name={item.parentPath.name}
+                      path={item.parentPath.path}
+                    />
                   </h3>
                   <ul>
                     {item.paths.map((subItem) => (
@@ -24,7 +30,7 @@ export const Navigation = () => {
                       />
                     ))}
                   </ul>
-                </li>
+                </Fragment>
               );
             }
             return (
@@ -43,8 +49,11 @@ export const Navigation = () => {
 
 const NavigationLink = ({ path, name }: NavigationItem) => {
   return (
-    <li key={path}>
-      <Link href={path}>{name}</Link>
+    <li key={path} className="navigationLink">
+      <Link href={path}>
+        {name}{" "}
+        <Image className="footstepsIcon right" alt={name} src={footsteps} />
+      </Link>
     </li>
   );
 };
