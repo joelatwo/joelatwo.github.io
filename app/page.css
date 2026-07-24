@@ -1,6 +1,5 @@
 .coreCharacterSheet {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
 }
 
 .mainCharacterSheet {
@@ -40,6 +39,7 @@
 .sideBar {
   padding-left: 0.5rem;
   padding-bottom: 1rem;
+  flex: 0 0 250px;
 }
 
 .companyName {

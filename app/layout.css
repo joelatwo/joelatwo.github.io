@@ -4,6 +4,8 @@
   display: grid;
   color: black;
   margin: 32px;
+  /* max-height: calc(100vh - 64px); */
+  overflow: hidden;
 }
 
 .layoutBackgroundImage {
@@ -16,10 +18,10 @@
 }
 
 .layoutContent {
-  max-height: 100vh;
   z-index: 1;
   overflow: hidden;
   padding: 2% 4%;
+  max-height: 84vh;
 }
 
 .layoutContentInner {

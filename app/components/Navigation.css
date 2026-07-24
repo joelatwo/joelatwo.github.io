@@ -38,10 +38,9 @@
       margin-left: 16px;
       transition: margin 0.5s;
     }
-  }
 
-  .footstepsIcon.right {
-    margin-left: 0;
-    transform: rotate(90deg);
+    .footstepsIcon {
+      margin-left: 0;
+    }
   }
 }

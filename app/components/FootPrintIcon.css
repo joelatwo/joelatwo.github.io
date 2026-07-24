@@ -1,0 +1,24 @@
+.footstepsIcon {
+  position: absolute;
+}
+
+.footstepsIcon.right {
+  transform: rotate(90deg);
+}
+
+.footstepsIcon.left {
+  transform: rotate(-90deg);
+}
+
+.footstepsIcon.up {
+  transform: rotate(0deg);
+}
+
+.footstepsIcon.down {
+  transform: rotate(180deg);
+}
+
+a:hover .footstepsIcon.right {
+  margin-left: 16px;
+  transition: margin 0.5s;
+}

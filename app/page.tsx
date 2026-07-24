@@ -4,6 +4,8 @@ import { Rating, Typography } from "@mui/material";
 import { skills } from "@/data/skills";
 import { StarRating } from "./components/StarRating";
 import Link from "next/link";
+import { NavigationLink } from "./components/NavigationLink";
+import { FootPrintLink } from "./components/FootPrintLink";
 
 const skillsList = Object.entries(skills);
 
@@ -19,7 +21,13 @@ export default async function Home() {
         <h1>Joel Atwood</h1>
         <div className="characterSheetHeader">
           <p className="title">Full-Stack Software Engineer</p>
-          <Link href="mailto:joelatwo@gmail.com">joelatwo@gmail.com</Link>
+          <FootPrintLink
+            href="mailto:joelatwo@gmail.com"
+            direction={"right"}
+            alt={"email"}
+          >
+            joelatwo@gmail.com
+          </FootPrintLink>
           <p className="experience">
             <b>Experience:</b> 7 Years
           </p>
@@ -27,11 +35,21 @@ export default async function Home() {
             <b>Education:</b> B.S. Computer Science
           </p>
 
-          <Link href="https://www.linkedin.com/in/joelatwo/">
+          <FootPrintLink
+            href="https://www.linkedin.com/in/joelatwo/"
+            direction={"right"}
+            alt={"LinkedIn"}
+          >
             linkedin.com/in/joelatwo/
-          </Link>
-          <Link href="https://github.com/joelatwo">github.com/joelatwo</Link>
-          {/* </div> */}
+          </FootPrintLink>
+
+          <FootPrintLink
+            href="https://github.com/joelatwo"
+            direction={"right"}
+            alt={"Github"}
+          >
+            github.com/joelatwo
+          </FootPrintLink>
         </div>
 
         <div className="coreCharacterSheet">
@@ -115,9 +133,9 @@ export default async function Home() {
             <div>
               <h2>Strengths</h2>
               <div>
-                <StarRating name="Building Trust" value={4} />
-                <StarRating name="Problem Solving" value={3} />
-                <StarRating name="UI/UX Design" value={2} />
+                <StarRating name="Communication" value={4} />
+                <StarRating name="Strategic" value={3} />
+                <StarRating name="UI/UX" value={2} />
                 <StarRating name="Coding Ability" value={4} />
                 <StarRating name="Leadership" value={3} />
               </div>
