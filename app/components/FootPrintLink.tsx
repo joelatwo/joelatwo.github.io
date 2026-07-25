@@ -6,7 +6,7 @@ import { DirectionLiteral } from "./type";
 type Props = {
   href: string;
   children: ReactNode;
-  direction: DirectionLiteral;
+  direction?: DirectionLiteral;
   alt: string;
   className?: string;
 };
@@ -19,7 +19,7 @@ export const FootPrintLink = ({
   className,
 }: Props) => {
   return (
-    <Link href={href} className={className}>
+    <Link href={href} className={`footPrintLink ${className}`}>
       {children}
       <FootPrintIcon alt={alt} direction={direction} />
     </Link>

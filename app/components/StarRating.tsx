@@ -5,7 +5,17 @@ type Props = {
   value: number;
 };
 
+    const labels = [
+      "None",
+      "Worked With",
+      "Selective Knowledge",
+      "Practical Expertise",
+      "Expert",
+      "Exceptional",
+    ];
+
 export const StarRating = ({ name, value }: Props) => {
+  
   return (
     <div className="skillItem">
       <Typography>{name}</Typography>
@@ -15,6 +25,7 @@ export const StarRating = ({ name, value }: Props) => {
         value={value}
         readOnly
         sx={{ color: "black" }}
+         
       />
     </div>
   );

@@ -6,6 +6,7 @@ import { StarRating } from "./components/StarRating";
 import Link from "next/link";
 import { NavigationLink } from "./components/NavigationLink";
 import { FootPrintLink } from "./components/FootPrintLink";
+import { FormBuilderPath, SchedulingApp, SelincPath } from "@/data/navigation";
 
 const skillsList = Object.entries(skills);
 
@@ -64,7 +65,9 @@ export default async function Home() {
             <h2>Experience</h2>
 
             <div>
-              <h3 className="companyName">Idaho State Government</h3>
+              <h3 className="companyName">
+                <FootPrintLink href={FormBuilderPath.href} alt="Idaho State Government" >Idaho State Government</FootPrintLink>
+                </h3>
               <p className="jobTitle">Software Engineer 3</p>
               <ul>
                 <li>
@@ -86,7 +89,7 @@ export default async function Home() {
 
             <div>
               <h3 className="companyName">
-                Schweitzer Engineering Laboratories
+                <FootPrintLink href={SelincPath.href} alt={"SEL"} >Schweitzer Engineering Laboratories</FootPrintLink>
               </h3>
               <p className="jobTitle">Software Engineer</p>
               <ul>
@@ -108,7 +111,8 @@ export default async function Home() {
             </div>
 
             <div>
-              <h3 className="companyName">Fenway Group</h3>
+              <h3 className="companyName">
+                <FootPrintLink href={SchedulingApp.href} alt="Fenway Group">Fenway Group</FootPrintLink></h3>
               <p className="jobTitle">Associate Software Engineer</p>
               <ul>
                 <li>

@@ -29,11 +29,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 10%;
   height: 100%;
+  width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
+
 .layoutScrollable {
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .footstepsIcon {

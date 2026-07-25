@@ -22,3 +22,8 @@ a:hover .footstepsIcon.right {
   margin-left: 16px;
   transition: margin 0.5s;
 }
+
+.footPrintLink {
+  position: relative;
+  margin-right: 1rem;
+}
