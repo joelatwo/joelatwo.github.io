@@ -44,3 +44,9 @@
   width: 16px;
   height: 16px;
 }
+
+.hamburgerMenuButton.MuiButtonBase-root {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
