@@ -17,10 +17,46 @@
   z-index: -1; /* Ensure the image is behind the content */
 }
 
+.desktopBookImage {
+  display: block;
+}
+
+.mobileBookImage {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktopBookImage {
+    display: none;
+  }
+
+  .mobileBookImage {
+    display: block;
+  }
+
+  .layoutBackground {
+    margin: 2rem 0;
+
+    .layoutContent {
+      height: 100%;
+      margin: 2rem 1rem;
+      margin-right: 1.5rem;
+      padding: 0;
+
+      .layoutContentInner {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+
 .layoutContent {
   z-index: 1;
   overflow: hidden;
   padding: 2% 4%;
+  height: 84vh;
   max-height: 84vh;
 }
 

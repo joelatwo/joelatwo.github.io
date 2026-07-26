@@ -38,17 +38,12 @@ export default async function Home() {
 
           <FootPrintLink
             href="https://www.linkedin.com/in/joelatwo/"
-            direction={"right"}
             alt={"LinkedIn"}
           >
             linkedin.com/in/joelatwo/
           </FootPrintLink>
 
-          <FootPrintLink
-            href="https://github.com/joelatwo"
-            direction={"right"}
-            alt={"Github"}
-          >
+          <FootPrintLink href="https://github.com/joelatwo" alt={"Github"}>
             github.com/joelatwo
           </FootPrintLink>
         </div>
@@ -66,8 +61,13 @@ export default async function Home() {
 
             <div>
               <h3 className="companyName">
-                <FootPrintLink href={FormBuilderPath.href} alt="Idaho State Government" >Idaho State Government</FootPrintLink>
-                </h3>
+                <FootPrintLink
+                  href={FormBuilderPath.href}
+                  alt="Idaho State Government"
+                >
+                  Idaho State Government
+                </FootPrintLink>
+              </h3>
               <p className="jobTitle">Software Engineer 3</p>
               <ul>
                 <li>
@@ -89,7 +89,9 @@ export default async function Home() {
 
             <div>
               <h3 className="companyName">
-                <FootPrintLink href={SelincPath.href} alt={"SEL"} >Schweitzer Engineering Laboratories</FootPrintLink>
+                <FootPrintLink href={SelincPath.href} alt={"SEL"}>
+                  Schweitzer Engineering Laboratories
+                </FootPrintLink>
               </h3>
               <p className="jobTitle">Software Engineer</p>
               <ul>
@@ -112,7 +114,10 @@ export default async function Home() {
 
             <div>
               <h3 className="companyName">
-                <FootPrintLink href={SchedulingApp.href} alt="Fenway Group">Fenway Group</FootPrintLink></h3>
+                <FootPrintLink href={SchedulingApp.href} alt="Fenway Group">
+                  Fenway Group
+                </FootPrintLink>
+              </h3>
               <p className="jobTitle">Associate Software Engineer</p>
               <ul>
                 <li>

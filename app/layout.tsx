@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/styles/globals.css";
-import BookImage from "@/app/assets/NoteBook.png";
+import DesktopBookImage from "@/app/assets/DesktopNoteBook.png";
+import MobileBookImage from "@/app/assets/MobileNotebook.png";
 import Image from "next/image";
 import { DrawerNavigation } from "./components/DrawerNavigation";
 
@@ -34,9 +35,14 @@ export default function RootLayout({
         <DrawerNavigation />
         <div className="layoutBackground">
           <Image
-            src={BookImage}
-            alt="Book Background Image"
-            className="layoutBackgroundImage"
+            src={DesktopBookImage}
+            alt="Desktop Book Background Image"
+            className="layoutBackgroundImage desktopBookImage"
+          />
+          <Image
+            src={MobileBookImage}
+            alt="Mobile Book Background Image"
+            className="layoutBackgroundImage mobileBookImage"
           />
           <div className="layoutContent">
             <div className="layoutContentInner">{children}</div>

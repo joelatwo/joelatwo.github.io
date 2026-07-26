@@ -50,3 +50,9 @@
 .jobTitle {
   margin-top: 0;
 }
+
+@media (max-width: 768px) {
+  .coreCharacterSheet {
+    display: block;
+  }
+}
