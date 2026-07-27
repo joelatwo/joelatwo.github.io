@@ -1,5 +1,18 @@
+import { promises as fs } from "fs";
+import path from "path";
 import { getContent } from "@/data/dataFetching";
 import { Project } from "@/types/index";
+
+export async function generateStaticParams() {
+  const projectsDir = path.join(process.cwd(), "data", "projects");
+  const entries = await fs.readdir(projectsDir);
+
+  return entries
+    .filter((entry) => entry.endsWith(".ts"))
+    .map((entry) => ({ slug: entry.replace(/\.ts$/, "") }));
+}
+
+export const dynamicParams = false;
 
 export default async function Page({
   params,

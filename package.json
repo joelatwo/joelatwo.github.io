@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run css && next build",
+    "build:pages": "node ./scripts/build-github-pages.mjs",
     "start": "next start",
     "lint": "eslint",
     "css": "node ./build-css-imports.js"
