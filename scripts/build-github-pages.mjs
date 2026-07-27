@@ -42,7 +42,9 @@ async function main() {
 
   console.log("\nStatic export complete.");
   console.log("docs/ is ready for GitHub Pages deployment.");
-  console.log("Run: git add docs && git commit -m \"Deploy static site\" && git push origin master");
+  console.log(
+    'Run: git add docs && git commit -m "Deploy static site" && git push origin master',
+  );
 }
 
 main().catch((error) => {
