@@ -23,7 +23,6 @@ html {
   overflow: hidden;
 }
 
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -33,4 +32,10 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+
+.MuiButton-root.closeButton {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

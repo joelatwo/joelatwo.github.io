@@ -2,9 +2,13 @@ import NavigationData from "@/data/navigation";
 import { Fragment } from "react/jsx-runtime";
 import { NavigationLink } from "./NavigationLink";
 
-export const Navigation = () => {
+type Props = {
+  className?: string;
+};
+
+export const Navigation = ({ className }: Props) => {
   return (
-    <div className="navigation">
+    <div className={`navigation ${className}`}>
       <h2>Contents</h2>
       <nav>
         <ul>

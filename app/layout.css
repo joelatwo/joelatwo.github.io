@@ -50,6 +50,26 @@
       }
     }
   }
+
+  #left {
+    .navigation {
+      display: none;
+    }
+  }
+
+  .MuiDrawer-paper {
+    max-width: 100vw;
+    width: 100%;
+
+    .drawerNavigation {
+      overflow-x: hidden;
+      padding: 0 1rem;
+
+      .navigationLink {
+        margin: 1rem 0;
+      }
+    }
+  }
 }
 
 .layoutContent {
@@ -62,7 +82,7 @@
 
 .layoutContentInner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 45%; /* This is 45% to make room for the 10% gap */
   gap: 10%;
   height: 100%;
   width: 100%;

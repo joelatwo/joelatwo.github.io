@@ -23,6 +23,7 @@
     color: black;
     margin: 0.5rem 0;
     position: relative;
+    padding-right: 1rem;
 
     a {
       color: black;
@@ -43,9 +44,5 @@
     .footstepsIcon {
       margin-left: 0;
     }
-  }
-
-  @media (max-width: 768px) {
-    display: none;
   }
 }

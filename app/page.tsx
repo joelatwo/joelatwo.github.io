@@ -1,12 +1,15 @@
 import { getContent } from "@/data/dataFetching";
 import { Navigation } from "@/app/components/Navigation";
-import { Rating, Typography } from "@mui/material";
+import { Rating, Tooltip, Typography } from "@mui/material";
 import { skills } from "@/data/skills";
-import { StarRating } from "./components/StarRating";
+import { StarRating } from "./components/StarRating/StarRating";
 import Link from "next/link";
 import { NavigationLink } from "./components/NavigationLink";
 import { FootPrintLink } from "./components/FootPrintLink";
 import { FormBuilderPath, SchedulingApp, SelincPath } from "@/data/navigation";
+import { RatingToolTipContent } from "./components/StarRating/RatingToolTipContent";
+import { Info } from "@mui/icons-material";
+import { StarRatingHeader } from "./components/StarRating/StarRatingHeader";
 
 const skillsList = Object.entries(skills);
 
@@ -140,7 +143,7 @@ export default async function Home() {
 
           <div className="sideBar">
             <div>
-              <h2>Strengths</h2>
+              <StarRatingHeader title="Strengths" />
               <div>
                 <StarRating name="Communication" value={4} />
                 <StarRating name="Strategic" value={3} />
@@ -150,7 +153,7 @@ export default async function Home() {
               </div>
             </div>
             <div className="skillsList">
-              <h2>Skills</h2>
+              <StarRatingHeader title="Skills" />
               {skillsList.map(([name, value]) => (
                 <StarRating key={name} name={name} value={value} />
               ))}

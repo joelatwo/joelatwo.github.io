@@ -2,6 +2,6 @@
 
 @import '../components/FootPrintIcon.css';
 @import '../components/Navigation.css';
-@import '../components/StarRating.css';
+@import '../components/StarRating/StarRating.css';
 @import '../layout.css';
 @import '../page.css';

@@ -34,5 +34,4 @@ export const skills = {
   ...languages,
   ...cicd,
   ...database,
-  ...otherSkills,
 };
