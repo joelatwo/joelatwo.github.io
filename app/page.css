@@ -83,3 +83,111 @@
     }
   }
 }
+
+@page {
+  size: letter portrait;
+  margin: 0.5in;
+}
+
+@media print {
+  html,
+  body {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  .layoutBackground {
+    margin: 0;
+    height: auto;
+    overflow: visible;
+  }
+
+  .layoutBackgroundImage,
+  .hamburgerMenuButton,
+  .MuiDrawer-paper,
+  .drawerNavigation {
+    display: none !important;
+  }
+
+  .layoutContent {
+    height: auto;
+    max-height: none;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .layoutContentInner {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    gap: 0;
+  }
+
+  #left {
+    display: none !important;
+  }
+
+  #right {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .characterSheetHeader {
+    gap: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .coreCharacterSheet {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .mainCharacterSheet {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .mainCharacterSheet > div:nth-of-type(3) {
+    display: none !important;
+  }
+
+  .sideBar {
+    flex: 0 0 220px;
+    padding-left: 0;
+  }
+
+  .starRatingHeader svg {
+    display: none !important;
+  }
+
+  .footPrintLink .footstepsIcon,
+  .footPrintLink svg {
+    display: none !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  li,
+  p,
+  .jobTitle,
+  .companyName {
+    break-inside: avoid;
+  }
+}

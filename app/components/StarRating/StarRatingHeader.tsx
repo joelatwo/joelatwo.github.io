@@ -1,6 +1,5 @@
 import { Info } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
-import { title } from "process";
 import { RatingToolTipContent } from "./RatingToolTipContent";
 
 type Props = {
@@ -10,7 +9,7 @@ type Props = {
 export const StarRatingHeader = ({ title }: Props) => {
   return (
     <Tooltip title={<RatingToolTipContent />}>
-      <h2>
+      <h2 className="starRatingHeader">
         {title} <Info />
       </h2>
     </Tooltip>
